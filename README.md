@@ -24,3 +24,6 @@ Code First yaklasimina gore proje hazirlanmistir.
 ## Bolum-3
 - Ürünler Listeleme 
 - Ürün Ekleme
+- Ürün Sil
+- DropDownList Kategori Ad Gosterme
+- Ürün Güncelleme
