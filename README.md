@@ -5,7 +5,9 @@ Code First yaklasimina gore proje hazirlanmistir.
 
 ### Ekstra Eklenecekler:
 - KategoriGetiri html helper ile degil form inputu ile yap
-- 
+- Urunlere ve diger tablolara vazgec veya resetle butonu ekle
+- Admin paneli guzellistirme 
+- Urun ekle de durum radiobutton olarak goster
 
 ## Bolum-1
 - Siniflar Olusturuldu
@@ -20,4 +22,5 @@ Code First yaklasimina gore proje hazirlanmistir.
 - Kategori Guncelleme
 
 ## Bolum-3
-- Ürünler Listeleme
+- Ürünler Listeleme 
+- Ürün Ekleme
