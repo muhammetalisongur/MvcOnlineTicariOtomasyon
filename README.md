@@ -27,3 +27,10 @@ Code First yaklasimina gore proje hazirlanmistir.
 - Ürün Sil
 - DropDownList Kategori Ad Gosterme
 - Ürün Güncelleme
+
+## Bolum-4
+- Departman Listeleme
+- Departman Ekleme
+- Departman Silme
+- Departman Guncelleme
+
