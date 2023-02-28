@@ -12,7 +12,7 @@ Code First yaklasimina gore proje hazirlanmistir.
 - silinmis olan kayitlari gosterme
 - Arama kismini butun tabloya ekle
 - pagedlistelemeyi butun tabloya ekle
--  
+-  Personel Silme islemini yap
 
 
 ## Bolum-1
@@ -29,7 +29,7 @@ Code First yaklasimina gore proje hazirlanmistir.
 
 ## Bolum-3
 - Ürünler Listeleme 
-- Ürün Ekleme
+- Ürün Ekleme DropDownList ile
 - Ürün Sil
 - DropDownList Kategori Ad Gosterme
 - Ürün Güncelleme
@@ -42,7 +42,7 @@ Code First yaklasimina gore proje hazirlanmistir.
 - Departman Getir Personel listesi
 - Departman Personel Satislari listeleme
 
-## Bolum-4
+## Bolum-5
 - Cari Listeleme
 - Cari Ekleme
 - Cari Durum Ekleme
@@ -50,3 +50,7 @@ Code First yaklasimina gore proje hazirlanmistir.
 - Cari Validation Rule
 - Cari Satis Gecmisi
 
+## Bolum-6
+- Personel Listeleme
+- Personel ekleme  DropDownList ile
+-  
