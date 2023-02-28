@@ -139,6 +139,10 @@
     <Compile Include="Migrations\202302280633492_departmanDurum.designer.cs">
       <DependentUpon>202302280633492_departmanDurum.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202302281011585_PersonelDepartmanID.cs" />
+    <Compile Include="Migrations\202302281011585_PersonelDepartmanID.designer.cs">
+      <DependentUpon>202302281011585_PersonelDepartmanID.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Siniflar\Admin.cs" />
     <Compile Include="Models\Siniflar\Cariler.cs" />
@@ -297,6 +301,7 @@
     <Content Include="Views\Departman\Index.cshtml" />
     <Content Include="Views\Departman\YeniDepartman.cshtml" />
     <Content Include="Views\Departman\DepartmanGetir.cshtml" />
+    <Content Include="Views\Departman\DepartmanDetay.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -334,6 +339,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202302280633492_departmanDurum.resx">
       <DependentUpon>202302280633492_departmanDurum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202302281011585_PersonelDepartmanID.resx">
+      <DependentUpon>202302281011585_PersonelDepartmanID.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

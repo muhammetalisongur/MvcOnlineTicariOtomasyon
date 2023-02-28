@@ -33,4 +33,5 @@ Code First yaklasimina gore proje hazirlanmistir.
 - Departman Ekleme
 - Departman Durumunu Değiştirme
 - Departman Guncelleme
+- Departman Getir Personel listesi
 
