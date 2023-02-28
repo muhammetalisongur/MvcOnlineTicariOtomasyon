@@ -53,4 +53,9 @@ Code First yaklasimina gore proje hazirlanmistir.
 ## Bolum-6
 - Personel Listeleme
 - Personel ekleme  DropDownList ile
--  
+- Personel Guncelleme
+- Personel Sattigi urun listeleme
+
+## Bolum-7
+- Satislar listeleme
+- Satis ekle
