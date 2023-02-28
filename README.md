@@ -13,6 +13,7 @@ Code First yaklasimina gore proje hazirlanmistir.
 - Arama kismini butun tabloya ekle
 - pagedlistelemeyi butun tabloya ekle
 -  Personel Silme islemini yap
+- satis ekrani toplam fiyat gosterme
 
 
 ## Bolum-1

@@ -48,10 +48,60 @@ namespace MvcOnlineTicariOtomasyon.Controllers
         [HttpPost]
         public ActionResult YeniSatis(SatisHareket s)
         {
-            s.Tarih = DateTime.Parse(DateTime.Now.ToShortDateString());
-            c.SatisHarekets.Add(s);
-            c.SaveChanges();
-            return RedirectToAction("Index");
+            var urunFiyati = c.Uruns.Where(x => x.UrunID == s.UrunID).Select(y => y.SatisFiyat).FirstOrDefault();
+            var urunStok = c.Uruns.Where(x => x.UrunID == s.UrunID).Select(y => y.Stok).FirstOrDefault();
+            if (urunStok >= s.Adet)
+            {
+                s.ToplamTutar = urunFiyati * s.Adet;
+                s.Fiyat = urunFiyati;
+                //urunStok = (short)(s.Urun.Stok - s.Adet);
+
+
+                s.Tarih = DateTime.Parse(DateTime.Now.ToShortDateString());
+                c.SatisHarekets.Add(s);
+                c.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                return RedirectPermanent("~/Urun/UrunGetir/" + s.UrunID);
+            }
         }
+
+
+        //public ActionResult UpdateSell(SalesAction s)
+        //{
+        //    var prodPrice = db.Products.Where(x => x.ProdId == s.ProdId).Select(z => z.SellPrice).FirstOrDefault();
+        //    var prodStock = db.Products.Where(x => x.ProdId == s.ProdId).Select(z => z.Stock).FirstOrDefault();
+        //    int quality = s.Quality;
+        //    decimal price = prodPrice;
+        //    decimal total;
+        //    int stock = prodStock;
+        //    var sellId = db.SalesActions.Find(s.SalesId);
+        //    int oldQuality = sellId.Quality;
+        //    short res = 0;
+        //    if (prodStock >= quality)
+        //    {
+        //        if (oldQuality > quality) { res = Convert.ToInt16(oldQuality - quality); stock = stock + res; }
+        //        if (oldQuality < quality) { res = Convert.ToInt16(quality - oldQuality); stock = stock - res; }
+        //        var prod = db.Products.Find(s.ProdId);
+        //        prod.Stock = Convert.ToInt16(stock);
+        //        total = price * quality;
+        //        sellId.DateSales = DateTime.Parse(DateTime.Now.ToShortDateString());
+        //        sellId.Price = price;
+        //        sellId.Quality = quality;
+        //        sellId.Total = total;
+        //        sellId.ProdId = s.ProdId;
+        //        sellId.Clientid = s.Clientid;
+        //        sellId.PersonId = s.PersonId;
+        //        db.SaveChanges();
+        //        return RedirectToAction("Index");
+
+        //    }
+
+        //    else
+        //    {
+        //        return RedirectPermanent("~/Product/ChangeProduct/" + s.ProdId);
+        //    }
     }
 }
