@@ -58,4 +58,6 @@ Code First yaklasimina gore proje hazirlanmistir.
 
 ## Bolum-7
 - Satislar listeleme
-- Satis ekle
+- Satis ekle DropDownList
+- Trigger
+- 
