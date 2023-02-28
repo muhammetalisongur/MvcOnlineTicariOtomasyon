@@ -124,6 +124,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\CariController.cs" />
     <Compile Include="Controllers\DepartmanController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\KategoriController.cs" />
@@ -146,6 +147,10 @@
     <Compile Include="Migrations\202302281032095_satishareketvirtual.cs" />
     <Compile Include="Migrations\202302281032095_satishareketvirtual.designer.cs">
       <DependentUpon>202302281032095_satishareketvirtual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202302281114292_carilerdurum.cs" />
+    <Compile Include="Migrations\202302281114292_carilerdurum.designer.cs">
+      <DependentUpon>202302281114292_carilerdurum.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Siniflar\Admin.cs" />
@@ -307,9 +312,12 @@
     <Content Include="Views\Departman\DepartmanGetir.cshtml" />
     <Content Include="Views\Departman\DepartmanDetay.cshtml" />
     <Content Include="Views\Departman\DepartmanPersonelSatis.cshtml" />
+    <Content Include="Views\Cari\Index.cshtml" />
+    <Content Include="Views\Cari\CariEkle.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Cariler\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />
@@ -350,6 +358,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202302281032095_satishareketvirtual.resx">
       <DependentUpon>202302281032095_satishareketvirtual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202302281114292_carilerdurum.resx">
+      <DependentUpon>202302281114292_carilerdurum.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

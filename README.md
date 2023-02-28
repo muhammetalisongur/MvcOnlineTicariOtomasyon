@@ -8,6 +8,9 @@ Code First yaklasimina gore proje hazirlanmistir.
 - Urunlere ve diger tablolara vazgec veya resetle butonu ekle
 - Admin paneli guzellistirme 
 - Urun ekle de durum radiobutton olarak goster
+- validation butun siteye uygula
+
+
 
 ## Bolum-1
 - Siniflar Olusturuldu
@@ -35,4 +38,9 @@ Code First yaklasimina gore proje hazirlanmistir.
 - Departman Guncelleme
 - Departman Getir Personel listesi
 - Departman Personel Satislari listeleme
+
+## Bolum-4
+- Cari Listeleme
+- Cari Ekleme
+- Cari Durum
 
