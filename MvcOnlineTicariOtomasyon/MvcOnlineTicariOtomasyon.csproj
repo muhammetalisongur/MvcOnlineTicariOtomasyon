@@ -152,6 +152,10 @@
     <Compile Include="Migrations\202302281114292_carilerdurum.designer.cs">
       <DependentUpon>202302281114292_carilerdurum.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202302281146121_CariValidationRule.cs" />
+    <Compile Include="Migrations\202302281146121_CariValidationRule.designer.cs">
+      <DependentUpon>202302281146121_CariValidationRule.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Siniflar\Admin.cs" />
     <Compile Include="Models\Siniflar\Cariler.cs" />
@@ -314,6 +318,7 @@
     <Content Include="Views\Departman\DepartmanPersonelSatis.cshtml" />
     <Content Include="Views\Cari\Index.cshtml" />
     <Content Include="Views\Cari\CariEkle.cshtml" />
+    <Content Include="Views\Cari\CariGetir.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -361,6 +366,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202302281114292_carilerdurum.resx">
       <DependentUpon>202302281114292_carilerdurum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202302281146121_CariValidationRule.resx">
+      <DependentUpon>202302281146121_CariValidationRule.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

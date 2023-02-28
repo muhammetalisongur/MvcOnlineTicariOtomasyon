@@ -9,7 +9,10 @@ Code First yaklasimina gore proje hazirlanmistir.
 - Admin paneli guzellistirme 
 - Urun ekle de durum radiobutton olarak goster
 - validation butun siteye uygula
-
+- silinmis olan kayitlari gosterme
+- Arama kismini butun tabloya ekle
+- pagedlistelemeyi butun tabloya ekle
+- 
 
 
 ## Bolum-1
@@ -42,5 +45,7 @@ Code First yaklasimina gore proje hazirlanmistir.
 ## Bolum-4
 - Cari Listeleme
 - Cari Ekleme
-- Cari Durum
+- Cari Durum Ekleme
+- Cari Validation Rule
+- Cari Sil
 

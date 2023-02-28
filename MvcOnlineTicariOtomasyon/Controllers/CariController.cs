@@ -13,7 +13,7 @@ namespace MvcOnlineTicariOtomasyon.Controllers
         Context c = new Context();
         public ActionResult Index()
         {
-            var deger = c.Carilers.ToList();
+            var deger = c.Carilers.Where(x => x.Durum == true).ToList();
             return View(deger);
         }
 
@@ -30,7 +30,34 @@ namespace MvcOnlineTicariOtomasyon.Controllers
             c.SaveChanges();
             return RedirectToAction("Index");
         }
-       
+        public ActionResult CariSil(int id)
+        {
+            var bul = c.Carilers.Find(id);
+            bul.Durum = false;
+            c.SaveChanges();
+            return RedirectToAction("Index");
+        }
+        public ActionResult CariGetir(int id)
+        {
+            var bul = c.Carilers.Find(id);
+            return View("CariGetir", bul);
+        }
+
+        public ActionResult CariGuncelle(Cariler p )
+        {
+            if (!ModelState.IsValid)
+            {
+                return View("CariGetir");
+            }
+            var bul = c.Carilers.Find(p.CariID);
+            bul.CariAd = p.CariAd;
+            bul.CariSoyad = p.CariSoyad;
+            bul.CariSehir = p.CariSehir;
+            bul.CariMail = p.CariMail;  
+            c.SaveChanges();
+            return RedirectToAction("Index");
+
+        }
 
     }
 }

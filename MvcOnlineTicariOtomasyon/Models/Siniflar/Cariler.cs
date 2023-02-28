@@ -12,7 +12,8 @@ namespace MvcOnlineTicariOtomasyon.Models.Siniflar
         [Key]
         public int CariID { get; set; }
         [Column(TypeName = "Varchar")]
-        [StringLength(30)]
+        [StringLength(30, ErrorMessage = "En fazla 30 karekter yazabilirsiniz...")]
+        [Required(ErrorMessage = "Bu alani bos gecemezsiniz...")]
         public string CariAd { get; set; }
         [Column(TypeName = "Varchar")]
         [StringLength(30)]
