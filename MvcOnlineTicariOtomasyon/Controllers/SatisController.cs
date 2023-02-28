@@ -54,8 +54,8 @@ namespace MvcOnlineTicariOtomasyon.Controllers
             {
                 s.ToplamTutar = urunFiyati * s.Adet;
                 s.Fiyat = urunFiyati;
-                //urunStok = (short)(s.Urun.Stok - s.Adet);
-
+                short kalan = (short)(s.Adet - urunStok);
+                s.Urun.Stok = kalan;
 
                 s.Tarih = DateTime.Parse(DateTime.Now.ToShortDateString());
                 c.SatisHarekets.Add(s);
