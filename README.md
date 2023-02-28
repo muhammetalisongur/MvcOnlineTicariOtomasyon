@@ -12,7 +12,7 @@ Code First yaklasimina gore proje hazirlanmistir.
 - silinmis olan kayitlari gosterme
 - Arama kismini butun tabloya ekle
 - pagedlistelemeyi butun tabloya ekle
-- 
+-  
 
 
 ## Bolum-1
@@ -46,6 +46,7 @@ Code First yaklasimina gore proje hazirlanmistir.
 - Cari Listeleme
 - Cari Ekleme
 - Cari Durum Ekleme
-- Cari Validation Rule
 - Cari Sil
+- Cari Validation Rule
+- Cari Satis Gecmisi
 

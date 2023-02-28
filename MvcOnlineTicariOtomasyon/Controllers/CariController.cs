@@ -43,7 +43,7 @@ namespace MvcOnlineTicariOtomasyon.Controllers
             return View("CariGetir", bul);
         }
 
-        public ActionResult CariGuncelle(Cariler p )
+        public ActionResult CariGuncelle(Cariler p)
         {
             if (!ModelState.IsValid)
             {
@@ -53,10 +53,17 @@ namespace MvcOnlineTicariOtomasyon.Controllers
             bul.CariAd = p.CariAd;
             bul.CariSoyad = p.CariSoyad;
             bul.CariSehir = p.CariSehir;
-            bul.CariMail = p.CariMail;  
+            bul.CariMail = p.CariMail;
             c.SaveChanges();
             return RedirectToAction("Index");
+        }
 
+        public ActionResult MusteriSatis(int id)
+        {
+            var deger = c.SatisHarekets.Where(x => x.CariID == id).ToList();
+            var cari = c.Carilers.Where(x => x.CariID == id).Select(y => y.CariAd + " " + y.CariSoyad).FirstOrDefault();
+            ViewBag.deger = cari;
+            return View(deger);
         }
 
     }
