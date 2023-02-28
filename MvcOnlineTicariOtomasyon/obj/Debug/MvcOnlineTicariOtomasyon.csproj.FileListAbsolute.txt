@@ -66,3 +66,4 @@ D:\GitHub\source\repos\MvcOnlineTicariOtomasyon\MvcOnlineTicariOtomasyon\obj\Deb
 D:\GitHub\source\repos\MvcOnlineTicariOtomasyon\MvcOnlineTicariOtomasyon\obj\Debug\MvcOnlineTicariOtomasyon.csproj.GenerateResource.cache
 D:\GitHub\source\repos\MvcOnlineTicariOtomasyon\MvcOnlineTicariOtomasyon\obj\Debug\MvcOnlineTicariOtomasyon.Migrations.departmanDurum.resources
 D:\GitHub\source\repos\MvcOnlineTicariOtomasyon\MvcOnlineTicariOtomasyon\obj\Debug\MvcOnlineTicariOtomasyon.Migrations.PersonelDepartmanID.resources
+D:\GitHub\source\repos\MvcOnlineTicariOtomasyon\MvcOnlineTicariOtomasyon\obj\Debug\MvcOnlineTicariOtomasyon.Migrations.satishareketvirtual.resources

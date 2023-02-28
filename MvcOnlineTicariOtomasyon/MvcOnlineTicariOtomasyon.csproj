@@ -143,6 +143,10 @@
     <Compile Include="Migrations\202302281011585_PersonelDepartmanID.designer.cs">
       <DependentUpon>202302281011585_PersonelDepartmanID.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202302281032095_satishareketvirtual.cs" />
+    <Compile Include="Migrations\202302281032095_satishareketvirtual.designer.cs">
+      <DependentUpon>202302281032095_satishareketvirtual.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Siniflar\Admin.cs" />
     <Compile Include="Models\Siniflar\Cariler.cs" />
@@ -342,6 +346,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202302281011585_PersonelDepartmanID.resx">
       <DependentUpon>202302281011585_PersonelDepartmanID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202302281032095_satishareketvirtual.resx">
+      <DependentUpon>202302281032095_satishareketvirtual.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
