@@ -135,6 +135,10 @@
     <Compile Include="Migrations\202302270801361_CreateTable.designer.cs">
       <DependentUpon>202302270801361_CreateTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202302280633492_departmanDurum.cs" />
+    <Compile Include="Migrations\202302280633492_departmanDurum.designer.cs">
+      <DependentUpon>202302280633492_departmanDurum.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Siniflar\Admin.cs" />
     <Compile Include="Models\Siniflar\Cariler.cs" />
@@ -327,6 +331,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202302270801361_CreateTable.resx">
       <DependentUpon>202302270801361_CreateTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202302280633492_departmanDurum.resx">
+      <DependentUpon>202302280633492_departmanDurum.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -31,6 +31,6 @@ Code First yaklasimina gore proje hazirlanmistir.
 ## Bolum-4
 - Departman Listeleme
 - Departman Ekleme
-- Departman Silme
+- Departman Durumunu Değiştirme
 - Departman Guncelleme
 

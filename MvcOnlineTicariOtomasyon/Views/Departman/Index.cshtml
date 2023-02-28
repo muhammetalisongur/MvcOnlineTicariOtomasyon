@@ -6,20 +6,23 @@
 <br />
 <table class="table table-bordered">
     <tr>
+
         <td>ID</td>
         <td>Departman Adı</td>
         <td>Sil</td>
         <td>Güncelle</td>
+        <td>Detaylar</td>
     </tr>
     @foreach (var item in Model)
     {
-    <tr>
-        <td>@item.DepartmanID</td>
-        <td>@item.DepartmanAD</td>
-        <td><a href="/Departman/DepartmanSil/@item.DepartmanID" class="btn btn-danger">Sil</a></td>
-        <td><a href="/Departman/DepartmanGetir/@item.DepartmanID" class="btn btn-warning">Güncelle</a></td>
+        <tr>
+            <td>@item.DepartmanID</td>
+            <td>@item.DepartmanAD</td>
+            <td><a href="/Departman/DepartmanSil/@item.DepartmanID" class="btn btn-danger">Sil</a></td>
+            <td><a href="/Departman/DepartmanGetir/@item.DepartmanID" class="btn btn-warning">Güncelle</a></td>
+            <td><a href="/Departman/DepartmanDetay/@item.DepartmanID" class="btn btn-secondary">Departman Detay</a></td>
 
-    </tr>
+        </tr>
     }
 </table>
 <a href="/Departman/YeniDepartman/" class="btn btn-primary">Yeni Departman Ekle</a>
