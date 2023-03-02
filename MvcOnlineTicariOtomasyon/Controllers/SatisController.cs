@@ -103,28 +103,46 @@ namespace MvcOnlineTicariOtomasyon.Controllers
         }
         public ActionResult SatisGuncelle(SatisHareket s)
         {
-            var urunFiyat = c.Uruns.Where(x => x.UrunID == s.UrunID).Select(y => y.SatisFiyat).FirstOrDefault();
-            var urunStok = c.Uruns.Where(x => x.UrunID == s.UrunID).Select(y => y.Stok).FirstOrDefault();
-            if (urunStok >= s.Adet)
+            var urunFiyat = c.Uruns.Where(x => x.UrunID == s.UrunID).Select(z => z.SatisFiyat).FirstOrDefault();
+            var urunStok = c.Uruns.Where(x => x.UrunID == s.UrunID).Select(z => z.Stok).FirstOrDefault();
+            int adet = s.Adet;
+            decimal fiyat = urunFiyat;
+            decimal toplam;
+            int stok = urunStok;
+            var satisID = c.SatisHarekets.Find(s.SatisID);
+            int eskiAdet = satisID.Adet;
+            short res = 0;
+            if (urunStok >= adet)
             {
-                var satis = c.SatisHarekets.Find(s.SatisID);
-                satis.UrunID = s.UrunID;
-                satis.PersonelID = s.PersonelID;
-                satis.CariID = s.CariID;
-                satis.Adet = s.Adet;
-                satis.Fiyat = s.Fiyat;
-                s.Tarih = DateTime.Parse(DateTime.Now.ToShortDateString());
-                s.ToplamTutar = urunFiyat * s.Adet;
-
-                urunStok = (short)((urunStok - s.Adet)+s.Adet);
-                var kalanStok = c.Uruns.Find(s.UrunID);
-                kalanStok.Stok = urunStok;
+                if (eskiAdet > adet)
+                {
+                    res = Convert.ToInt16(eskiAdet - adet);
+                    stok = stok + res;
+                }
+                if (eskiAdet < adet)
+                {
+                    res = Convert.ToInt16(adet - eskiAdet);
+                    stok = stok - res;
+                }
+                var urun = c.Uruns.Find(s.UrunID);
+                urun.Stok = Convert.ToInt16(stok);
+                toplam = fiyat * adet;
+                satisID.Tarih = DateTime.Parse(DateTime.Now.ToShortDateString());
+                satisID.Fiyat = fiyat;
+                satisID.Adet = adet;
+                satisID.ToplamTutar = toplam;
+                satisID.UrunID = s.UrunID;
+                satisID.CariID = s.CariID;
+                satisID.PersonelID = s.PersonelID;
                 c.SaveChanges();
                 return RedirectToAction("Index");
 
             }
+
             else
-                return RedirectPermanent("~/Urun/UrunGetir/" + s.UrunID);
+            {
+                return RedirectPermanent("~/Product/ChangeProduct/" + s.UrunID);
+            }
 
 
 

@@ -12,6 +12,8 @@
 @using (Html.BeginForm("SatisGuncelle", "Satis", FormMethod.Post))
 {
     @Html.HiddenFor(x => x.SatisID)
+    @Html.HiddenFor(x => x.Fiyat)
+    @Html.HiddenFor(x => x.ToplamTutar)
 
 
 
@@ -27,9 +29,7 @@
     <b> @Html.Label("Adet")</b>
     @Html.TextBoxFor(x => x.Adet, new { @class = "form-control", @required = "required" })
     <br />
-    <b> @Html.Label("Birim Fiyat")</b>
-    @Html.TextBoxFor(x => x.Fiyat, new { @class = "form-control", @required = "required" })
-    <br />   
+    
 
     <button class="btn btn-success">Satisi Güncelle</button>
 }
