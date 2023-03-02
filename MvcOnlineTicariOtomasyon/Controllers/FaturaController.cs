@@ -28,5 +28,29 @@ namespace MvcOnlineTicariOtomasyon.Controllers
             c.SaveChanges();
             return RedirectToAction("Index");
         }
+        public ActionResult FaturaGetir(int id)
+        {
+            var tarih = c.Faturalars.Where(x => x.FaturaID == id).Select(x => x.Tarih).FirstOrDefault();
+            var saat = c.Faturalars.Where(x => x.FaturaID == id).Select(x => x.Saat).FirstOrDefault();
+            var bul = c.Faturalars.Find(id);
+            
+            bul.Tarih = tarih;
+            bul.Saat = saat;
+            return View("FaturaGetir", bul);
+        }
+        public ActionResult FaturaGuncelle(Faturalar f)
+        {
+            var fatura = c.Faturalars.Find(f.FaturaID);
+            fatura.FaturaSeriNo = f.FaturaSeriNo;
+            fatura.FaturaSiraNo = f.FaturaSiraNo;
+            fatura.Tarih = f.Tarih;
+            fatura.Saat = f.Saat;
+            fatura.VergiDairesi = f.VergiDairesi;
+            fatura.TeslimEden = f.TeslimEden;
+            fatura.TeslimAlan = f.TeslimAlan;
+            c.SaveChanges();
+            return RedirectToAction("Index");
+
+        }
     }
 }

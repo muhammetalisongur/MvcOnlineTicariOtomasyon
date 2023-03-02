@@ -1,0 +1,37 @@
+﻿@model MvcOnlineTicariOtomasyon.Models.Siniflar.Faturalar
+
+@{
+    ViewBag.Title = "FaturaGetir";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<h2>Fatura Güncelleme</h2>
+<br />
+@using (Html.BeginForm("FaturaGuncelle", "Fatura", FormMethod.Post))
+{
+    @Html.HiddenFor(x => x.FaturaID)
+
+    @Html.Label("Fatura Seri No:")
+    @Html.TextBoxFor(x => x.FaturaSeriNo, new { @class = "form-control", @required = "" })
+    <br />
+    @Html.LabelFor(x => x.FaturaSiraNo)
+    @Html.TextBoxFor(x => x.FaturaSiraNo, new { @class = "form-control", @required = "" })
+    <br />
+    @Html.LabelFor(x => x.Tarih)
+    <input type="date" name="Tarih" class="form-control"  />
+    <br />
+    @Html.LabelFor(x => x.Saat)
+    <input type="time" name="Saat" class="form-control"  />
+    <br />
+    @Html.LabelFor(x => x.VergiDairesi)
+    @Html.TextBoxFor(x => x.VergiDairesi, new { @class = "form-control", @required = "" })
+    <br />
+    @Html.LabelFor(x => x.TeslimEden)
+    @Html.TextBoxFor(x => x.TeslimEden, new { @class = "form-control", @required = "" })
+    <br />
+    @Html.LabelFor(x => x.TeslimAlan)
+    @Html.TextBoxFor(x => x.TeslimAlan, new { @class = "form-control", @required = "" })
+    <br />
+    <button class="btn btn-success">Güncelle</button>
+}

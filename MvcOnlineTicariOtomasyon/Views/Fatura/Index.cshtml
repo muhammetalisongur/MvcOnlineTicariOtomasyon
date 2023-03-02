@@ -13,9 +13,9 @@
         <td>Vergi Dairesi</td>
         <td>Tarih</td>
         <td>Saat</td>
-        <td>Toplam</td>
         <td>Teslim Eden</td>
         <td>Teslim Alan</td>
+        <td>Toplam</td>
         <td>Guncelle</td>
         <td>Detaylar</td>
     </tr>
@@ -25,12 +25,13 @@
             <td>@item.FaturaID</td>
             <td>@item.FaturaSeriNo</td>
             <td>@item.FaturaSiraNo</td>
-            <td>@item.Tarih.ToShortDateString()</td>
+            <td>@item.VergiDairesi</td>
+            <td>@item.Tarih.ToString("dd MMM yyyy")</td>
             <td>@item.Saat</td>
-            <td>100</td>
             <td>@item.TeslimEden</td>
             <td>@item.TeslimAlan</td>
-            <td><a href="/Departman/DepartmanGetir/@item.FaturaID" class="btn btn-warning">Güncelle</a></td>
+            <td>100</td>
+            <td><a href="/Fatura/FaturaGetir/@item.FaturaID" class="btn btn-warning">Güncelle</a></td>
             <td><a href="/Departman/DepartmanDetay/@item.FaturaID" class="btn btn-secondary">Departman Detay</a></td>
         </tr>
     }
