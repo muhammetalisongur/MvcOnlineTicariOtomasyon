@@ -17,7 +17,7 @@ Code First yaklasimina gore proje hazirlanmistir.
 - satis ekraninda urun stoku yeterli degilse o urunu eklemeye yonlendirsin alert vererek
 - satis ekraninda toplam urun stok gostersin her urun icin
 - satis icin % indirim olustur
-
+- fatura detay da fatura seri numarasi tasima
 
 ## Bolum-1
 - Siniflar Olusturuldu

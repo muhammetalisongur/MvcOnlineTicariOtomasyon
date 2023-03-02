@@ -1,8 +1,35 @@
-﻿
+﻿@model List<MvcOnlineTicariOtomasyon.Models.Siniflar.FaturaKalem> 
 @{
     ViewBag.Title = "FaturaDetay";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
-<h2>FaturaDetay</h2>
+<br />
+<h2>Fatura Kalemleri Sayfası</h2>
+<br />
+<ol class="breadcrumb mb-4">
+    <li class="breadcrumb-item active">Fatura Seri No: <b>@*@ViewBag.deger*@</b> </li>
+</ol>
+<div style="background-color:aliceblue">
 
+    <table class="table table-hover">
+        <tr>
+            <th>ID</th>
+            <th>Aciklama</th>
+            <th>Miktar</th>
+            <th>Birim Fiyat</th>
+            <th>Tutar</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <th>@item.FaturaID</th>
+                <th>@item.Aciklama</th>
+                <th>@item.Miktar</th>
+                <th>@item.BirimFiyat</th>
+                <th>@item.Tutar</th>
+            </tr>
+        }
+    </table>
+</div>
+<br />
