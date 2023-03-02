@@ -71,4 +71,5 @@ Code First yaklasimina gore proje hazirlanmistir.
 
 ## Bolum-7
 - Fatura Listeleme
-- 
+- Fatura ekleme
+- Fatura guncelleme

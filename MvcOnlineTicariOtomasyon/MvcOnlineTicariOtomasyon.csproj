@@ -168,6 +168,10 @@
     <Compile Include="Migrations\202302281146121_CariValidationRule.designer.cs">
       <DependentUpon>202302281146121_CariValidationRule.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202303021333413_fatura.cs" />
+    <Compile Include="Migrations\202303021333413_fatura.designer.cs">
+      <DependentUpon>202303021333413_fatura.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Siniflar\Admin.cs" />
     <Compile Include="Models\Siniflar\Cariler.cs" />
@@ -577,6 +581,7 @@
     <Content Include="Views\Satis\SatisDetay.cshtml" />
     <Content Include="Views\Urun\UrunListesi.cshtml" />
     <Content Include="Views\Fatura\Index.cshtml" />
+    <Content Include="Views\Fatura\FaturaEkle.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -626,6 +631,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202302281146121_CariValidationRule.resx">
       <DependentUpon>202302281146121_CariValidationRule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202303021333413_fatura.resx">
+      <DependentUpon>202303021333413_fatura.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -25,7 +25,7 @@
             <td>@item.FaturaID</td>
             <td>@item.FaturaSeriNo</td>
             <td>@item.FaturaSiraNo</td>
-            <td>@item.Tarih</td>
+            <td>@item.Tarih.ToShortDateString()</td>
             <td>@item.Saat</td>
             <td>100</td>
             <td>@item.TeslimEden</td>
@@ -35,4 +35,4 @@
         </tr>
     }
 </table>
-<a href="/Departman/YeniDepartman/" class="btn btn-primary">Yeni Departman Ekle</a>
+<a href="/Fatura/FaturaEkle/" class="btn btn-primary">Yeni Departman Ekle</a>
