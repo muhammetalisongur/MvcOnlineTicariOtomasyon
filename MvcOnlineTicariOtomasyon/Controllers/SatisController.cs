@@ -140,11 +140,12 @@ namespace MvcOnlineTicariOtomasyon.Controllers
             }
             else
                 return RedirectPermanent("~/Urun/UrunGetir/" + s.UrunID);
+        }
 
-
-
-
-
+        public ActionResult SatisDetay(int id)
+        {
+            var listele = c.SatisHarekets.Where(x => x.SatisID == id).ToList();
+            return View(listele);
         }
 
     }

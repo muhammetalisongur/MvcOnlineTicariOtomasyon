@@ -65,4 +65,7 @@ Code First yaklasimina gore proje hazirlanmistir.
 - Satis ekle DropDownList
 - Trigger Kullanimi
 - Satis guncelleme
-- 
+- Satis Detay
+- satislar datatable ile tablolama
+- urun listesini pdf excel csv donusturme kodu
+
