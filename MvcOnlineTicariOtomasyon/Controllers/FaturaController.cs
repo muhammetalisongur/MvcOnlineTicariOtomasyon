@@ -30,12 +30,7 @@ namespace MvcOnlineTicariOtomasyon.Controllers
         }
         public ActionResult FaturaGetir(int id)
         {
-            var tarih = c.Faturalars.Where(x => x.FaturaID == id).Select(x => x.Tarih).FirstOrDefault();
-            var saat = c.Faturalars.Where(x => x.FaturaID == id).Select(x => x.Saat).FirstOrDefault();
             var bul = c.Faturalars.Find(id);
-            
-            bul.Tarih = tarih;
-            bul.Saat = saat;
             return View("FaturaGetir", bul);
         }
         public ActionResult FaturaGuncelle(Faturalar f)
@@ -50,7 +45,11 @@ namespace MvcOnlineTicariOtomasyon.Controllers
             fatura.TeslimAlan = f.TeslimAlan;
             c.SaveChanges();
             return RedirectToAction("Index");
-
+        }
+        public ActionResult FaturaDetay(int id)
+        {
+            var deger = c.Faturalars.Where(x => x.FaturaID == id).ToList();
+            return View(deger);
         }
     }
 }

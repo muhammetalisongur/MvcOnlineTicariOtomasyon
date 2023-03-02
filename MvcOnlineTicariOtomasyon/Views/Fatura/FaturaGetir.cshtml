@@ -19,10 +19,10 @@
     @Html.TextBoxFor(x => x.FaturaSiraNo, new { @class = "form-control", @required = "" })
     <br />
     @Html.LabelFor(x => x.Tarih)
-    <input type="date" name="Tarih" class="form-control"  />
+    <input type="date" name="Tarih" class="form-control" required />
     <br />
     @Html.LabelFor(x => x.Saat)
-    <input type="time" name="Saat" class="form-control"  />
+    <input type="time" name="Saat" class="form-control" required />
     <br />
     @Html.LabelFor(x => x.VergiDairesi)
     @Html.TextBoxFor(x => x.VergiDairesi, new { @class = "form-control", @required = "" })
@@ -35,3 +35,4 @@
     <br />
     <button class="btn btn-success">Güncelle</button>
 }
+
