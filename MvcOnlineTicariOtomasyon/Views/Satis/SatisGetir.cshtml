@@ -12,10 +12,6 @@
 @using (Html.BeginForm("SatisGuncelle", "Satis", FormMethod.Post))
 {
     @Html.HiddenFor(x => x.SatisID)
-    @Html.HiddenFor(x => x.Fiyat)
-    @Html.HiddenFor(x => x.ToplamTutar)
-
-
 
     <b> @Html.Label("Ürün Ad")</b>
     @Html.DropDownListFor(x => x.UrunID, (List<SelectListItem>)ViewBag.dgr1, new { @class = "form-control" })
@@ -29,7 +25,7 @@
     <b> @Html.Label("Adet")</b>
     @Html.TextBoxFor(x => x.Adet, new { @class = "form-control", @required = "required" })
     <br />
-    
+
 
     <button class="btn btn-success">Satisi Güncelle</button>
 }

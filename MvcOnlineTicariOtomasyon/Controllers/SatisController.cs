@@ -138,11 +138,9 @@ namespace MvcOnlineTicariOtomasyon.Controllers
                 return RedirectToAction("Index");
 
             }
-
             else
-            {
-                return RedirectPermanent("~/Product/ChangeProduct/" + s.UrunID);
-            }
+                return RedirectPermanent("~/Urun/UrunGetir/" + s.UrunID);
+
 
 
 
