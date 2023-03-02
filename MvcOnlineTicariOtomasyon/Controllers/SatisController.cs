@@ -48,19 +48,20 @@ namespace MvcOnlineTicariOtomasyon.Controllers
         [HttpPost]
         public ActionResult YeniSatis(SatisHareket s)
         {
-            var urunFiyati = c.Uruns.Where(x => x.UrunID == s.UrunID).Select(y => y.SatisFiyat).FirstOrDefault();
-            var urunStok = c.Uruns.Where(x => x.UrunID == s.UrunID).Select(y => y.Stok).FirstOrDefault();
+            var urunFiyat = c.Uruns.Where(x => x.UrunID == s.UrunID).Select(z => z.SatisFiyat).FirstOrDefault();
+            var urunStok = c.Uruns.Where(x => x.UrunID == s.UrunID).Select(z => z.Stok).FirstOrDefault();
             if (urunStok >= s.Adet)
             {
-                s.ToplamTutar = urunFiyati * s.Adet;
-                s.Fiyat = urunFiyati;
-                short kalan = (short)(s.Adet - urunStok);
-                s.Urun.Stok = kalan;
+                urunStok = (short)(urunStok - s.Adet);
 
+                var kalanStok = c.Uruns.Find(s.UrunID);
+                kalanStok.Stok = urunStok;
+                s.ToplamTutar = urunFiyat * s.Adet;
                 s.Tarih = DateTime.Parse(DateTime.Now.ToShortDateString());
                 c.SatisHarekets.Add(s);
                 c.SaveChanges();
                 return RedirectToAction("Index");
+
             }
             else
             {
