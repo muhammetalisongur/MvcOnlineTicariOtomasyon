@@ -69,3 +69,6 @@ Code First yaklasimina gore proje hazirlanmistir.
 - satislar datatable ile tablolama
 - urun listesini pdf excel csv donusturme kodu
 
+## Bolum-7
+- Fatura Listeleme
+- 

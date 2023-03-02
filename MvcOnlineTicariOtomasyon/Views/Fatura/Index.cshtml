@@ -1,0 +1,38 @@
+﻿@model List<MvcOnlineTicariOtomasyon.Models.Siniflar.Faturalar>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<br />
+<table class="table table-bordered">
+    <tr>
+
+        <td>ID</td>
+        <td>Seri No</td>
+        <td>Sira No</td>
+        <td>Vergi Dairesi</td>
+        <td>Tarih</td>
+        <td>Saat</td>
+        <td>Toplam</td>
+        <td>Teslim Eden</td>
+        <td>Teslim Alan</td>
+        <td>Guncelle</td>
+        <td>Detaylar</td>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.FaturaID</td>
+            <td>@item.FaturaSeriNo</td>
+            <td>@item.FaturaSiraNo</td>
+            <td>@item.Tarih</td>
+            <td>@item.Saat</td>
+            <td>100</td>
+            <td>@item.TeslimEden</td>
+            <td>@item.TeslimAlan</td>
+            <td><a href="/Departman/DepartmanGetir/@item.FaturaID" class="btn btn-warning">Güncelle</a></td>
+            <td><a href="/Departman/DepartmanDetay/@item.FaturaID" class="btn btn-secondary">Departman Detay</a></td>
+        </tr>
+    }
+</table>
+<a href="/Departman/YeniDepartman/" class="btn btn-primary">Yeni Departman Ekle</a>
