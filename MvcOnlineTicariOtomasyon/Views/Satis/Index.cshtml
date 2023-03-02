@@ -16,7 +16,7 @@
         <td>Adet</td>
         <td>Fiyat</td>
         <td>Toplam</td>
-        <td>Tarih</td>
+        <td>Satis Tarih</td>
         <td>Guncelle</td>
         <td>Detaylar</td>
     </tr>
@@ -31,7 +31,7 @@
             <td>@item.Fiyat</td>
             <td>@item.ToplamTutar</td>
             <td>@item.Tarih.ToShortDateString()</td>
-            <td><a href="/Personel/PersonelGetir/@item.PersonelID" class="btn btn-warning">Güncelle</a></td>
+            <td><a href="/Satis/SatisGetir/@item.SatisID" class="btn btn-warning">Güncelle</a></td>
             <td><a href="/Departman/DepartmanPersonelSatis/@item.PersonelID" class="btn btn-secondary">Detay</a></td>
         </tr>
     }

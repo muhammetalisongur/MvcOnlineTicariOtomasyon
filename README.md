@@ -14,6 +14,9 @@ Code First yaklasimina gore proje hazirlanmistir.
 - pagedlistelemeyi butun tabloya ekle
 -  Personel Silme islemini yap
 - satis ekrani toplam fiyat gosterme
+- satis ekraninda urun stoku yeterli degilse o urunu eklemeye yonlendirsin alert vererek
+- satis ekraninda toplam urun stok gostersin her urun icin
+- satis icin % indirim olustur
 
 
 ## Bolum-1
@@ -60,5 +63,6 @@ Code First yaklasimina gore proje hazirlanmistir.
 ## Bolum-7
 - Satislar listeleme
 - Satis ekle DropDownList
-- Trigger
+- Trigger Kullanimi
+- Satis guncelleme
 - 

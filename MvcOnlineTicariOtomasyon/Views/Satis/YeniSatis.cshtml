@@ -20,9 +20,8 @@
     @Html.DropDownListFor(x => x.PersonelID, (List<SelectListItem>)ViewBag.dgr3, new { @class = "form-control" })
     <br />
     <b> @Html.Label("Adet")</b>
-    @Html.TextBoxFor(x => x.Adet, new { @class = "form-control" })
+    @Html.TextBoxFor(x => x.Adet, new { @class = "form-control", @required = "required" })
     <br />
- 
-    <button class="btn btn-primary">Satis Yap</button>
+    <button class="btn btn-primary" onmouseover="function()">Satis Yap</button>
 </form>
 
