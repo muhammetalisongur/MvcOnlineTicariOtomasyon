@@ -78,4 +78,5 @@ Code First yaklasimina gore proje hazirlanmistir.
 - Yeni Kalem Girisi
 
 ## Bolum-8
-- Istatistik Tablosu
+- Istatistik Tablosu Duzenleme
+- Istatistik tablosuna toplam sayilari ekleme
