@@ -78,4 +78,4 @@ Code First yaklasimina gore proje hazirlanmistir.
 - Yeni Kalem Girisi
 
 ## Bolum-8
-- Istatistik 
+- Istatistik Tablosu
