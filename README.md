@@ -85,4 +85,7 @@ Code First yaklasimina gore proje hazirlanmistir.
 - Galeri temasini ekleme 
 - Temayi duzenleme
 - Galeri resim gosterme
+
+## Bolum-10
+- E-ticaret tema ekleme
 - 
