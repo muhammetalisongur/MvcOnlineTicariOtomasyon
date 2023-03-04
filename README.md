@@ -80,3 +80,9 @@ Code First yaklasimina gore proje hazirlanmistir.
 ## Bolum-8
 - Istatistik Tablosu Duzenleme
 - Istatistik tablosuna toplam sayilari ekleme
+
+## Bolum-9
+- Galeri temasini ekleme 
+- Temayi duzenleme
+- Galeri resim gosterme
+- 
