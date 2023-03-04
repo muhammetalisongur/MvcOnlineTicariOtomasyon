@@ -18,6 +18,8 @@ Code First yaklasimina gore proje hazirlanmistir.
 - satis ekraninda toplam urun stok gostersin her urun icin
 - satis icin % indirim olustur
 - fatura detay da fatura seri numarasi tasima
+- yeni kalem girisinde fatura id tasima
+- 
 
 ## Bolum-1
 - Siniflar Olusturuldu
@@ -74,3 +76,6 @@ Code First yaklasimina gore proje hazirlanmistir.
 - Fatura ekleme
 - Fatura guncelleme
 - Yeni Kalem Girisi
+
+## Bolum-8
+- Istatistik 

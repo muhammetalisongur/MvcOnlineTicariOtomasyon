@@ -11,8 +11,6 @@
 
     @Html.LabelFor(x => x.Aciklama)
     @Html.TextBoxFor(x => x.Aciklama, new { @class = "form-control", @required = "" })
-
-    @*@Html.DropDownListFor(x => x.Aciklama, (List<SelectListItem>)ViewBag.deger1, new { @class = "form-control", })*@
     <br />
     @Html.LabelFor(x => x.Miktar)
     @Html.TextBoxFor(x => x.Miktar, new { @class = "form-control", @required = "" })
@@ -23,8 +21,8 @@
     @Html.LabelFor(x => x.Tutar)
     @Html.TextBoxFor(x => x.Tutar, new { @class = "form-control", @required = "" })
     <br />
-    @*@Html.LabelFor(x => x.FaturaID)
-    @Html.TextBoxFor(x => x.FaturaID, new { @class = "form-control", @required = "" })*@
+    @Html.LabelFor(x => x.FaturaID)
+    @Html.TextBoxFor(x => x.FaturaID, new { @class = "form-control", @required = "" })
     <br />
     <button class="btn btn-info">Fatura Ekle</button>
 </form>
