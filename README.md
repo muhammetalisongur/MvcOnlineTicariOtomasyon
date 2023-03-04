@@ -73,3 +73,4 @@ Code First yaklasimina gore proje hazirlanmistir.
 - Fatura Listeleme
 - Fatura ekleme
 - Fatura guncelleme
+- Yeni Kalem Girisi
