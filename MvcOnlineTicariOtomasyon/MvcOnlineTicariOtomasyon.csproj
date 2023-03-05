@@ -2898,6 +2898,8 @@
     <Content Include="Views\UrunDetay\Index.cshtml" />
     <Content Include="Views\Istatistik\ProgressBar.cshtml" />
     <Content Include="Views\Istatistik\Partial1.cshtml" />
+    <Content Include="Views\Istatistik\Partial2.cshtml" />
+    <Content Include="Views\Istatistik\Partial3.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
