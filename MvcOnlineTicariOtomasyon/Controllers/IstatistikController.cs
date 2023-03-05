@@ -63,6 +63,29 @@ namespace MvcOnlineTicariOtomasyon.Controllers
             return View();
         }
 
+        public ActionResult ProgressBar()
+        {
+            var sorgu = (from x in c.Carilers where(x.Durum==true)
+                        group x by x.CariSehir into g
+                        select new SinifGrup
+                        {
+                            Sehir = g.Key,
+                            Sayi = g.Count()
+                        }).OrderByDescending(x=>x.Sayi).Take(5);
+          
+            return View(sorgu);
+        }
+        public PartialViewResult Partial1()
+        {
+            var sorgu2 = (from x in c.Personels
+                          group x by x.DepartmanID into g
+                          select new SinifGrup2
+                          {
+                              Departman = g.Key,
+                              Sayi = g.Count()
+                          });
+            return PartialView(sorgu2.ToList());
+        }
 
 
     }

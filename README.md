@@ -90,3 +90,9 @@ Code First yaklasimina gore proje hazirlanmistir.
 - E-ticaret tema ekleme
 - Detay sinif eklendi
 - IEnumerable ile coklu sinif olusturma
+
+## Bolum-11
+- Progress bar ekleme
+- Sehirler tablosunu olusturma
+- Partial View
+- 
