@@ -80,7 +80,7 @@ namespace MvcOnlineTicariOtomasyon.Controllers
         public PartialViewResult Partial1()
         {
             var sorgu2 = (from x in c.Personels
-                          group x by x.DepartmanID into g
+                          group x by x.Departman.DepartmanAD into g
                           select new SinifGrup2
                           {
                               Departman = g.Key,
