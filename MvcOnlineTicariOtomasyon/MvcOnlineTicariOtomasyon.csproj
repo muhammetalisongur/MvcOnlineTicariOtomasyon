@@ -176,11 +176,21 @@
     <Compile Include="Migrations\202303021333413_fatura.designer.cs">
       <DependentUpon>202303021333413_fatura.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202303050508505_detaycreate.cs" />
+    <Compile Include="Migrations\202303050508505_detaycreate.designer.cs">
+      <DependentUpon>202303050508505_detaycreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202303050512031_detaycreate1.cs" />
+    <Compile Include="Migrations\202303050512031_detaycreate1.designer.cs">
+      <DependentUpon>202303050512031_detaycreate1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Siniflar\Admin.cs" />
     <Compile Include="Models\Siniflar\Cariler.cs" />
+    <Compile Include="Models\Siniflar\Class1.cs" />
     <Compile Include="Models\Siniflar\Context.cs" />
     <Compile Include="Models\Siniflar\Departman.cs" />
+    <Compile Include="Models\Siniflar\Detay.cs" />
     <Compile Include="Models\Siniflar\FaturaKalem.cs" />
     <Compile Include="Models\Siniflar\Faturalar.cs" />
     <Compile Include="Models\Siniflar\Gider.cs" />
@@ -2936,6 +2946,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202303021333413_fatura.resx">
       <DependentUpon>202303021333413_fatura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202303050508505_detaycreate.resx">
+      <DependentUpon>202303050508505_detaycreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202303050512031_detaycreate1.resx">
+      <DependentUpon>202303050512031_detaycreate1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

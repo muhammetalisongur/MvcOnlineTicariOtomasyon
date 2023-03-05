@@ -154,3 +154,5 @@ D:\GitHub\MvcOnlineTicariOtomasyon\MvcOnlineTicariOtomasyon\obj\Debug\MvcOnlineT
 D:\GitHub\MvcOnlineTicariOtomasyon\MvcOnlineTicariOtomasyon\obj\Debug\MvcOnlineTicariOtomasyon.csproj.CopyComplete
 D:\GitHub\MvcOnlineTicariOtomasyon\MvcOnlineTicariOtomasyon\obj\Debug\MvcOnlineTicariOtomasyon.dll
 D:\GitHub\MvcOnlineTicariOtomasyon\MvcOnlineTicariOtomasyon\obj\Debug\MvcOnlineTicariOtomasyon.pdb
+D:\GitHub\MvcOnlineTicariOtomasyon\MvcOnlineTicariOtomasyon\obj\Debug\MvcOnlineTicariOtomasyon.Migrations.detaycreate.resources
+D:\GitHub\MvcOnlineTicariOtomasyon\MvcOnlineTicariOtomasyon\obj\Debug\MvcOnlineTicariOtomasyon.Migrations.detaycreate1.resources

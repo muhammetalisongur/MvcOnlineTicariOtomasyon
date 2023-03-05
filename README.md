@@ -88,4 +88,5 @@ Code First yaklasimina gore proje hazirlanmistir.
 
 ## Bolum-10
 - E-ticaret tema ekleme
-- 
+- Detay sinif eklendi
+- IEnumerable ile coklu sinif olusturma

@@ -62,5 +62,8 @@ namespace MvcOnlineTicariOtomasyon.Controllers
 
             return View();
         }
+
+
+
     }
 }
