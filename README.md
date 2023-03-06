@@ -109,4 +109,8 @@ Code First yaklasimina gore proje hazirlanmistir.
 
 ## Bolum-14
 - Login Temasini dahil etme
+- Tema duzenleme
+- Partial View kayit ol ekrani
+- Kayit ol
+- web panel ekleme
 - 

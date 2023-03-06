@@ -135,6 +135,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\CariController.cs" />
+    <Compile Include="Controllers\CariPanelController.cs" />
     <Compile Include="Controllers\DepartmanController.cs" />
     <Compile Include="Controllers\FaturaController.cs" />
     <Compile Include="Controllers\GaleriController.cs" />
@@ -189,6 +190,10 @@
     <Compile Include="Migrations\202303060702503_yapilacak.cs" />
     <Compile Include="Migrations\202303060702503_yapilacak.designer.cs">
       <DependentUpon>202303060702503_yapilacak.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202303061240435_carisifre.cs" />
+    <Compile Include="Migrations\202303061240435_carisifre.designer.cs">
+      <DependentUpon>202303061240435_carisifre.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Siniflar\Admin.cs" />
@@ -2445,6 +2450,24 @@
     <Content Include="Template\weblogin\js\jquery-2.1.4.min.js" />
     <Content Include="Template\weblogin\js\jquery.magnific-popup.js" />
     <Content Include="Template\weblogin\w3layouts-License.txt" />
+    <Content Include="Template\webpanel\.gitignore" />
+    <Content Include="Template\webpanel\css\simple-sidebar.css" />
+    <Content Include="Template\webpanel\gulpfile.js" />
+    <Content Include="Template\webpanel\index.html" />
+    <Content Include="Template\webpanel\vendor\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="Template\webpanel\vendor\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="Template\webpanel\vendor\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="Template\webpanel\vendor\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="Template\webpanel\vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="Template\webpanel\vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Template\webpanel\vendor\bootstrap\js\bootstrap.bundle.js" />
+    <Content Include="Template\webpanel\vendor\bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Include="Template\webpanel\vendor\bootstrap\js\bootstrap.js" />
+    <Content Include="Template\webpanel\vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Template\webpanel\vendor\jquery\jquery.js" />
+    <Content Include="Template\webpanel\vendor\jquery\jquery.min.js" />
+    <Content Include="Template\webpanel\vendor\jquery\jquery.slim.js" />
+    <Content Include="Template\webpanel\vendor\jquery\jquery.slim.min.js" />
     <Content Include="Template\Web\.gitignore" />
     <Content Include="Template\Web\dist\401.html" />
     <Content Include="Template\Web\dist\404.html" />
@@ -2975,6 +2998,26 @@
     <Content Include="Template\weblogin\fonts\fontawesome-webfont.woff2" />
     <Content Include="Template\weblogin\fonts\FontAwesome.otf" />
     <Content Include="Views\Login\Index.cshtml" />
+    <Content Include="Views\Login\Partial1.cshtml" />
+    <Content Include="Template\webpanel\.travis.yml" />
+    <Content Include="Template\webpanel\LICENSE" />
+    <Content Include="Template\webpanel\package-lock.json" />
+    <Content Include="Template\webpanel\package.json" />
+    <Content Include="Template\webpanel\README.md" />
+    <Content Include="Template\webpanel\vendor\bootstrap\css\bootstrap-grid.css.map" />
+    <Content Include="Template\webpanel\vendor\bootstrap\css\bootstrap-grid.min.css.map" />
+    <Content Include="Template\webpanel\vendor\bootstrap\css\bootstrap-reboot.css.map" />
+    <Content Include="Template\webpanel\vendor\bootstrap\css\bootstrap-reboot.min.css.map" />
+    <Content Include="Template\webpanel\vendor\bootstrap\css\bootstrap.css.map" />
+    <Content Include="Template\webpanel\vendor\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="Template\webpanel\vendor\bootstrap\js\bootstrap.bundle.js.map" />
+    <Content Include="Template\webpanel\vendor\bootstrap\js\bootstrap.bundle.min.js.map" />
+    <Content Include="Template\webpanel\vendor\bootstrap\js\bootstrap.js.map" />
+    <Content Include="Template\webpanel\vendor\bootstrap\js\bootstrap.min.js.map" />
+    <Content Include="Template\webpanel\vendor\jquery\jquery.min.map" />
+    <Content Include="Template\webpanel\vendor\jquery\jquery.slim.min.map" />
+    <Content Include="Views\Shared\_CariLayout.cshtml" />
+    <Content Include="Views\CariPanel\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -3036,6 +3079,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202303060702503_yapilacak.resx">
       <DependentUpon>202303060702503_yapilacak.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202303061240435_carisifre.resx">
+      <DependentUpon>202303061240435_carisifre.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
