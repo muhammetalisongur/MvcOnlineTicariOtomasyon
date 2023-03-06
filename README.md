@@ -19,7 +19,7 @@ Code First yaklasimina gore proje hazirlanmistir.
 - satis icin % indirim olustur
 - fatura detay da fatura seri numarasi tasima
 - yeni kalem girisinde fatura id tasima
-- 
+- Adminlayouta personelleri listeleme ekle
 
 ## Bolum-1
 - Siniflar Olusturuldu
@@ -96,4 +96,4 @@ Code First yaklasimina gore proje hazirlanmistir.
 - Sehirler tablosunu olusturma
 - Partial View
 ## Bolum-12
-- Personel Detay Sayfasi
+- Personel Listeleme Sayfasi
