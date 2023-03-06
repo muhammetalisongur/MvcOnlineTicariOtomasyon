@@ -19,7 +19,7 @@ namespace MvcOnlineTicariOtomasyon.Controllers
             ViewBag.m = mail;
             return View(degerler);
         }
-        public ActionResult Index2(Cariler k)
+        public ActionResult Guncelle(Cariler k)
         {
             var mail = (string)Session["CariMail"];
             var id = c.Carilers.Where(x => x.CariMail == mail.ToString()).Select(y => y.CariID).FirstOrDefault();
@@ -30,6 +30,13 @@ namespace MvcOnlineTicariOtomasyon.Controllers
             cari.Sifre = k.Sifre;
             c.SaveChanges();
             return RedirectToAction("Index");
+        }
+        public ActionResult Siparislerim()
+        {
+            var mail = (string)Session["CariMail"];
+            var id = c.Carilers.Where(x => x.CariMail == mail.ToString()).Select(y => y.CariID).FirstOrDefault();
+            var degerler = c.SatisHarekets.Where(x => x.CariID == id).ToList();
+            return View(degerler);
         }
     }
 }

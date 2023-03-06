@@ -30,6 +30,7 @@ Code First yaklasimina gore proje hazirlanmistir.
 - login sifre hatali ise uyari verdirme
 - cari panel bilgileri listeleme
 - cari panel bilgileri guncelleeme
+- cari resim guncelleme
 
 ## Bolum-1
 - Siniflar Olusturuldu
@@ -120,3 +121,5 @@ Code First yaklasimina gore proje hazirlanmistir.
 - Authentication 
 - Session
 - Cari Panel giris yapan kisin bilgilerini gosterme
+- Cari siparisleri
+- 

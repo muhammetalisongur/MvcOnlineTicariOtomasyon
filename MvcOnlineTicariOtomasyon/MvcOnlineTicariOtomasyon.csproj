@@ -3019,6 +3019,7 @@
     <Content Include="Views\Shared\_CariLayout.cshtml" />
     <Content Include="Views\CariPanel\Index.cshtml" />
     <Content Include="Views\Login\Partial3.cshtml" />
+    <Content Include="Views\CariPanel\Siparislerim.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
