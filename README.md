@@ -20,6 +20,10 @@ Code First yaklasimina gore proje hazirlanmistir.
 - fatura detay da fatura seri numarasi tasima
 - yeni kalem girisinde fatura id tasima
 - Adminlayouta personelleri listeleme ekle
+- personel resimleri gosterilecek
+- todo list duzenleme eklenecek
+- todo list detay sayfasi eklenecek
+- todo list tarih ekleme ileri yonlu
 
 ## Bolum-1
 - Siniflar Olusturuldu
@@ -97,3 +101,6 @@ Code First yaklasimina gore proje hazirlanmistir.
 - Partial View
 ## Bolum-12
 - Personel Listeleme Sayfasi
+
+## Bolum-13
+- Todo List Sayfasi

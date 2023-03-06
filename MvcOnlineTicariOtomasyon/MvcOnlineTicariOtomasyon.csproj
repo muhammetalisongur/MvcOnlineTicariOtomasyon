@@ -145,6 +145,7 @@
     <Compile Include="Controllers\SatisController.cs" />
     <Compile Include="Controllers\UrunController.cs" />
     <Compile Include="Controllers\UrunDetayController.cs" />
+    <Compile Include="Controllers\YapilacakController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -184,6 +185,10 @@
     <Compile Include="Migrations\202303050512031_detaycreate1.designer.cs">
       <DependentUpon>202303050512031_detaycreate1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202303060702503_yapilacak.cs" />
+    <Compile Include="Migrations\202303060702503_yapilacak.designer.cs">
+      <DependentUpon>202303060702503_yapilacak.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Siniflar\Admin.cs" />
     <Compile Include="Models\Siniflar\Cariler.cs" />
@@ -201,6 +206,7 @@
     <Compile Include="Models\Siniflar\SinifGrup2.cs" />
     <Compile Include="Models\Siniflar\SinifGrup3.cs" />
     <Compile Include="Models\Siniflar\Urun.cs" />
+    <Compile Include="Models\Siniflar\Yapilacak.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -2903,6 +2909,8 @@
     <Content Include="Views\Istatistik\Partial3.cshtml" />
     <Content Include="Views\Istatistik\Partial4.cshtml" />
     <Content Include="Views\Personel\PersonelListe.cshtml" />
+    <Content Include="Views\Yapilacak\Index.cshtml" />
+    <Content Include="Views\Yapilacak\YeniYapilacak.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -2961,6 +2969,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202303050512031_detaycreate1.resx">
       <DependentUpon>202303050512031_detaycreate1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202303060702503_yapilacak.resx">
+      <DependentUpon>202303060702503_yapilacak.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
