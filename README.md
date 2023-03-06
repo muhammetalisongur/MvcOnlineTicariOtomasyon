@@ -126,4 +126,5 @@ Code First yaklasimina gore proje hazirlanmistir.
 
 ## Bolum-15
 - Admin Giris
-- 
+- PagedList kategorilere
+- Arama kutusu urunlere

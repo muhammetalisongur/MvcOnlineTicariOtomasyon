@@ -12,7 +12,6 @@
 
 <table class="table table-info">
     <tr>
-        <th>Satis ID</th>
         <th>Urun</th>
         <th>Cari</th>
         <th>Fiyat</th>
@@ -24,12 +23,11 @@
     @foreach (var item in Model)
     {
         <tr>
-            <td>@item.SatisID</td>
             <td>@item.Urun.UrunAd</td>
             <td>@item.Cariler.CariAd @item.Cariler.CariSoyad</td>
-            <td>@item.Fiyat</td>
+            <td>@item.Fiyat ₺</td>
             <td>@item.Adet</td>
-            <td>@item.ToplamTutar</td>
+            <td>@item.ToplamTutar ₺</td>
             <td>@item.Tarih.ToShortDateString()</td>
             <td><a href="#" class="btn btn"style="background-color:bisque">Yazdir</a></td>
         </tr>

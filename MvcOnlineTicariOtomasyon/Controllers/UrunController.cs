@@ -1,9 +1,11 @@
 ﻿using MvcOnlineTicariOtomasyon.Models.Siniflar;
+using PagedList;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.UI;
 
 namespace MvcOnlineTicariOtomasyon.Controllers
 {
@@ -11,12 +13,18 @@ namespace MvcOnlineTicariOtomasyon.Controllers
     {
         // GET: Urun
         Context c = new Context();
-        public ActionResult Index()
+        int sayfaNo = 1;
+        public ActionResult Index(string p)
         {
-            var UrunListele = c.Uruns.Where(x => x.Durum == true).ToList();
 
-            return View(UrunListele);
+            var UrunListele = from x in c.Uruns select x;
+            if (!string.IsNullOrEmpty(p))
+            {
+                UrunListele = UrunListele.Where(y => y.UrunAd.Contains(p));
+            }
+            return View(UrunListele.ToList());
         }
+
         [HttpGet]
         public ActionResult YeniUrun()
         {
@@ -60,15 +68,15 @@ namespace MvcOnlineTicariOtomasyon.Controllers
             var urn = c.Uruns.Find(u.UrunID);
             urn.AlisFiyat = u.AlisFiyat;
             urn.Durum = u.Durum;
-            urn.KategoriID= u.KategoriID;
-            urn.Marka= u.Marka;
-            urn.SatisFiyat= u.SatisFiyat;
-            urn.Stok= u.Stok;
-            urn.UrunAd= u.UrunAd;
-            urn.UrunGorsel= u.UrunGorsel;
+            urn.KategoriID = u.KategoriID;
+            urn.Marka = u.Marka;
+            urn.SatisFiyat = u.SatisFiyat;
+            urn.Stok = u.Stok;
+            urn.UrunAd = u.UrunAd;
+            urn.UrunGorsel = u.UrunGorsel;
             c.SaveChanges();
             return RedirectToAction("Index");
-          
+
         }
         public ActionResult UrunListesi()
         {
