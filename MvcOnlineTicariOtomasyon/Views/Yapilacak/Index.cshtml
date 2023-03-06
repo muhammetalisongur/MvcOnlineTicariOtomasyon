@@ -125,13 +125,15 @@
                                     <i class="fas fa-ellipsis-v"></i>
                                     <i class="fas fa-ellipsis-v"></i>
                                 </span>
-                                @Html.CheckBoxFor(Model => item.Durum)
                                 <!-- checkbox -->
-                                <div class="icheck-primary d-inline ml-2">
 
-                                    <input type="checkbox" value="" name="todo+@sayi" id="todoCheck+@sayi" checked="">
+                                
+                                <div class="icheck-primary d-inline ml-2">
+                                    <input type="checkbox" value="" name="todo+@sayi" id="todoCheck+@sayi">
                                     <label for="todoCheck+@sayi"></label>
                                 </div>
+
+
                                 <!-- todo text -->
                                 <span class="text">@item.Baslik</span>
                                 <!-- Emphasis label -->

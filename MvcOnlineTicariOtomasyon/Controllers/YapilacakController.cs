@@ -29,8 +29,11 @@ namespace MvcOnlineTicariOtomasyon.Controllers
        
 
         [HttpPost]
-        public ActionResult tiklama()
+        public ActionResult tiklama(Yapilacak y)
         {
+            
+            
+            c.SaveChanges();
             return View();
         }
         [HttpGet]
@@ -42,6 +45,7 @@ namespace MvcOnlineTicariOtomasyon.Controllers
         public ActionResult YeniYapilacak(Yapilacak y)
         {
             c.Yapilacaks.Add(y);
+            y.Durum = true;
             c.SaveChanges();
             return RedirectToAction("Index");
         }
