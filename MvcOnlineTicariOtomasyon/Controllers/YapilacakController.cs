@@ -26,16 +26,6 @@ namespace MvcOnlineTicariOtomasyon.Controllers
 
             return View(yapilacaklar);
         }
-       
-
-        [HttpPost]
-        public ActionResult tiklama(bool x)
-        {
-            
-            
-            c.SaveChanges();
-            return View();
-        }
         [HttpGet]
         public ActionResult YeniYapilacak()
         {
@@ -60,7 +50,7 @@ namespace MvcOnlineTicariOtomasyon.Controllers
         public ActionResult YapilacakGetir(int id)
         {
             var d = c.Yapilacaks.Find(id);
-            return View("YapilacakGetir",d);
+            return View("YapilacakGetir", d);
         }
         public ActionResult YapilacakGuncelle(Yapilacak y)
         {

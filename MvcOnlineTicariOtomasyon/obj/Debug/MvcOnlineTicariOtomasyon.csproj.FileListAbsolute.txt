@@ -160,3 +160,9 @@ D:\GitHub\source\repos\MvcOnlineTicariOtomasyon\MvcOnlineTicariOtomasyon\obj\Deb
 D:\GitHub\source\repos\MvcOnlineTicariOtomasyon\MvcOnlineTicariOtomasyon\obj\Debug\MvcOnlineTicariOtomasyon.Migrations.detaycreate1.resources
 D:\GitHub\source\repos\MvcOnlineTicariOtomasyon\MvcOnlineTicariOtomasyon\obj\Debug\MvcOnlineTicariOtomasyon.Migrations.yapilacak.resources
 D:\GitHub\source\repos\MvcOnlineTicariOtomasyon\MvcOnlineTicariOtomasyon\obj\Debug\MvcOnlineTicariOtomasyon.Migrations.carisifre.resources
+D:\GitHub\MvcOnlineTicariOtomasyon\MvcOnlineTicariOtomasyon\obj\Debug\MvcOnlineTicariOtomasyon.Migrations.yapilacak.resources
+D:\GitHub\MvcOnlineTicariOtomasyon\MvcOnlineTicariOtomasyon\obj\Debug\MvcOnlineTicariOtomasyon.Migrations.carisifre.resources
+D:\GitHub\MvcOnlineTicariOtomasyon\MvcOnlineTicariOtomasyon\bin\PagedList.dll
+D:\GitHub\MvcOnlineTicariOtomasyon\MvcOnlineTicariOtomasyon\bin\PagedList.Mvc.dll
+D:\GitHub\MvcOnlineTicariOtomasyon\MvcOnlineTicariOtomasyon\bin\PagedList.xml
+D:\GitHub\MvcOnlineTicariOtomasyon\MvcOnlineTicariOtomasyon\bin\PagedList.Mvc.xml

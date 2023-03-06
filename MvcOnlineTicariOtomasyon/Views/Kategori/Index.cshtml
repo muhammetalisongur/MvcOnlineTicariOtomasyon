@@ -1,5 +1,7 @@
 ﻿@using MvcOnlineTicariOtomasyon.Models.Siniflar
-@model List<Kategori>
+@using PagedList.Mvc;
+@using PagedList;
+@model PagedList.PagedList<Kategori>
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
@@ -8,7 +10,6 @@
 <br />
 <table class="table table-bordered">
     <tr>
-        <th>ID</th>
         <th>Kategori Adı</th>
         <th>Sil</th>
         <th>Güncelle</th>
@@ -16,11 +17,15 @@
     @foreach (var item in Model)
     {
         <tr>
-            <td>@item.KategoriID</td>
             <td>@item.KategoriAd</td>
             <td><a href="/Kategori/KategoriSil/@item.KategoriID" class="btn btn-danger">Sil</a></td>
             <td><a href="/Kategori/KategoriGetir/@item.KategoriID" class="btn btn-success">Güncelle</a></td>
         </tr>
     }
 </table>
+@Html.PagedListPager((IPagedList)Model, sayfaNo => Url.Action("Index", new { sayfaNo }), new PagedListRenderOptions
+{
+    LiElementClasses = new List<string>
+    {"page-link"}
+})
 <a href="/Kategori/KategoriEkle/" class="btn btn-primary"> Yeni Kategori</a>

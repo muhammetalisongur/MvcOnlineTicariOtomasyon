@@ -119,6 +119,7 @@
                         @{int sayi = 0; int simdiki = DateTime.Now.Day;}
                         @foreach (var item in Model)
                         {
+
                             sayi++;
                             <li>
                                 <!-- drag handle -->
@@ -128,15 +129,11 @@
                                 </span>
                                 <!-- checkbox -->
 
-                                <form method="post" action="tiklama" id="1">
-                                    <div class="icheck-primary d-inline ml-2">
-                                       
-                                        <input type="checkbox" value="" name="todo+@sayi" id="todoCheck+@sayi" onclick="name">
-                                        <label for="todoCheck+@sayi"></label>
-                                    </div>
-                                    <script></script>
+                                <div class="icheck-primary d-inline ml-2">
+                                    <input type="checkbox" value="" name="todo+@sayi" id="todoCheck+@sayi">
+                                    <label for="todoCheck+@sayi"></label>
+                                </div>
 
-                                </form>
                                 <!-- todo text -->
                                 <span class="text">@item.Baslik</span>
                                 <!-- Emphasis label -->
@@ -182,14 +179,14 @@
                                 }
 
                                 <!-- General tools such as edit or delete-->
-                            <div class="tools">
-                                <a href="/Yapilacak/YapilacakGetir/@item.YapilacakID">
-                                    <i class="fas fa-edit"></i>
-                                </a> 
-                                <a href="/Yapilacak/YapilacakSil/@item.YapilacakID"style="margin-left:10px">
-                                    <i class="fas fa-trash"></i>
-                                </a>
-                            </div>
+                                <div class="tools">
+                                    <a href="/Yapilacak/YapilacakGetir/@item.YapilacakID">
+                                        <i class="fas fa-edit"></i>
+                                    </a>
+                                    <a href="/Yapilacak/YapilacakSil/@item.YapilacakID" style="margin-left:10px">
+                                        <i class="fas fa-trash"></i>
+                                    </a>
+                                </div>
                             </li>
 
                         }
