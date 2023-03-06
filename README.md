@@ -22,6 +22,7 @@ Code First yaklasimina gore proje hazirlanmistir.
 - Adminlayouta personelleri listeleme ekle
 - personel resimleri gosterilecek
 - todo list duzenleme eklenecek
+- todo list sil eklenecek
 - todo list detay sayfasi eklenecek
 - todo list tarih ekleme ileri yonlu
 

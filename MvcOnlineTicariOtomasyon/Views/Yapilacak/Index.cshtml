@@ -119,6 +119,7 @@
                         @{int sayi = 0; int simdiki = DateTime.Now.Day;}
                         @foreach (var item in Model)
                         {
+                            sayi++;
                             <li>
                                 <!-- drag handle -->
                                 <span class="handle">
@@ -127,7 +128,7 @@
                                 </span>
                                 <!-- checkbox -->
 
-                                
+
                                 <div class="icheck-primary d-inline ml-2">
                                     <input type="checkbox" value="" name="todo+@sayi" id="todoCheck+@sayi">
                                     <label for="todoCheck+@sayi"></label>
@@ -154,29 +155,47 @@
                                         <small class="badge badge-success"><i class="far fa-clock"></i> 3 gun</small>
 
                                         break;
+                                    case 4:
+                                        <small class="badge badge-success"><i class="far fa-clock"></i> 4 gun</small>
+
+                                        break;
+                                    case 5:
+                                        <small class="badge badge-success"><i class="far fa-clock"></i> 5 gun</small>
+
+                                        break;
+                                    case 6:
+                                        <small class="badge badge-success"><i class="far fa-clock"></i> 6 gun</small>
+
+                                        break;
                                     case 7:
                                         <small class="badge badge-primary"><i class="far fa-clock"></i> 1 hafta</small>
 
                                         break;
-                                    case 30:
-                                        <small class="badge badge-secondary"><i class="far fa-clock"></i> 1 ay</small>
+
+                                    default:
+                                        <small class="badge badge-secondary"><i class="far fa-clock"></i> 1 haftadan uzun</small>
 
                                         break;
+
                                 }
 
                                 <!-- General tools such as edit or delete-->
-                                <div class="tools">
+                            <div class="tools">
+                                <a href="/Yapilacak/YapilacakGetir/@item.YapilacakID">
                                     <i class="fas fa-edit"></i>
+                                </a> 
+                                <a href="/Yapilacak/YapilacakSil/@item.YapilacakID"style="margin-left:10px">
                                     <i class="fas fa-trash"></i>
-                                </div>
+                                </a>
+                            </div>
                             </li>
-                            sayi++;
+
                         }
                     </ul>
                 </div>
                 <!-- /.card-body -->
                 <div class="card-footer clearfix">
-                    <a href="/Yapilacak/YeniYapilacak/"><button type="button" class="btn btn-info float-right"><i class="fas fa-plus"></i> Yeni Yapilacak Ekle</button></a>
+                    <a href="/Yapilacak/YeniYapilacak/" class="btn btn-info float-right"><i class="fas fa-plus"></i> Yeni Yapilacak Ekle</a>
                 </div>
             </div>
             <!-- /.row (main row) -->

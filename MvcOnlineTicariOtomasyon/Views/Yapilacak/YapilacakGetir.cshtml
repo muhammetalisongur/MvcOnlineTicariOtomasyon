@@ -1,0 +1,61 @@
+﻿@model MvcOnlineTicariOtomasyon.Models.Siniflar.Yapilacak
+@{
+    ViewBag.Title = "YapilacakGetir";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<link rel="stylesheet" href="~/Template/MCDatepicker-master/dist/mc-calendar.min.css" />
+<script src="~/Template/MCDatepicker-master/dist/mc-calendar.min.js"></script>
+<br />
+<h2>Yapilacak Getir</h2>
+<br />
+
+@using(Html.BeginForm("YapilacakGuncelle", "Yapilacak", FormMethod.Post)){
+
+<div class="form-group">
+    @Html.HiddenFor(x => x.YapilacakID, new { @class = "form-control" })
+
+    @Html.LabelFor(x => x.Baslik)
+    @Html.TextBoxFor(x => x.Baslik, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.KalanSure)
+    <input id="tarih" type="text" placeholder="Tarih Seçiniz" name="KalanSure" class="form-control" required />
+    <br />
+
+
+</div>
+<button class="btn btn-success">Güncelle</button>
+}
+
+<script>
+    const myDatePicker = MCDatepicker.create({
+        el: '#tarih', // input id ile eşleşmeli
+        showCalendarDisplay: false, // Takvim görünümü istiyorsanız `true` yapınız
+        dateFormat: 'DD-MM-YYYY', // Tarih formatı
+        customClearBTN: 'Temizle', // Temizle butonu yazısı
+        customOkBTN: 'Tamam', // Tamam butonu yazısı
+        customCancelBTN: 'İptal Et', // İptal Et butonu yazısı
+        customWeekDays: [
+            'Pazartesi',
+            'Salı',
+            'Çarşamba',
+            'Perşembe',
+            'Cuma',
+            'Ctesi',
+            'Pazar'
+        ], // Türkçe gün isimleri
+        customMonths: [
+            'Ocak',
+            'Şubat',
+            'Mart',
+            'Nisan',
+            'Mayıs',
+            'Haziran',
+            'Temmuz',
+            'Ağustos',
+            'Eylül',
+            'Ekim',
+            'Kasım',
+            'Aralık'
+        ] // Türkçe ay isimleri
+    });
+</script>
