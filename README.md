@@ -26,6 +26,10 @@ Code First yaklasimina gore proje hazirlanmistir.
 - todo list detay sayfasi eklenecek
 - todo list tarih ekleme ileri yonlu
 - todo list popup window seklinde ekleme guncelleem verme
+- login form kayit kontolu yapsin 
+- login sifre hatali ise uyari verdirme
+- cari panel bilgileri listeleme
+- cari panel bilgileri guncelleeme
 
 ## Bolum-1
 - Siniflar Olusturuldu
@@ -114,4 +118,5 @@ Code First yaklasimina gore proje hazirlanmistir.
 - Kayit ol
 - web panel ekleme
 - Authentication 
-- 
+- Session
+- Cari Panel giris yapan kisin bilgilerini gosterme

@@ -31,24 +31,26 @@ namespace MvcOnlineTicariOtomasyon.Controllers
             return PartialView();
         }
         [HttpGet]
-        public PartialViewResult Partial2()
+        public ActionResult CariLogin()
         {
-            return PartialView();
+            return View();
         }
         [HttpPost]
-        public PartialViewResult Partial2(Cariler p)
+        public ActionResult CariLogin(Cariler p)
         {
             var bilgiler = c.Carilers.FirstOrDefault(x => x.CariMail == p.CariMail && x.Sifre == p.Sifre);
             if (bilgiler !=null)
             {
                 FormsAuthentication.SetAuthCookie(bilgiler.CariMail, false);
                 Session["CariMail"] = bilgiler.CariMail.ToString();
-                return PartialView("Index", "CariPanel");
+                return RedirectToAction("Index", "CariPanel");
             }
            
 
-            return PartialView();
+            return View();
         }
+      
+
         [HttpGet]
         public PartialViewResult Partial3()
         {

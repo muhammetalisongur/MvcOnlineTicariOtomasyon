@@ -91,7 +91,23 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <div class="pop-up">
         <div id="small-dialog" class="mfp-hide book-form">
 
-            @Html.Action("Partial2","Login")
+            <div class="login-form login-form-left">
+                <div class="agile-row">
+                    <h3>Cari Giris Formu</h3>
+                    <span class="fa fa-lock"></span>
+                    <div class="clear"></div>
+                    <div class="login-agileits-top">
+                        <form action="CariLogin" method="post">
+                            <input type="text" class="name" name="CariMail" Placeholder="Mail Adresiniz" required="" />
+                            <input type="password" class="password" name="Sifre" Placeholder="Sifreniz" required="" />
+                            <input type="submit" value="Giris Yap">
+                        </form>
+                    </div>
+                    <div class="login-agileits-bottom">
+                        <h6><a href="#">Sifremi Unuttum</a></h6>
+                    </div>
+                </div>
+            </div>
 
         </div>
     </div>
