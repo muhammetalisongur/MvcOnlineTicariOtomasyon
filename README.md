@@ -95,4 +95,5 @@ Code First yaklasimina gore proje hazirlanmistir.
 - Progress bar ekleme
 - Sehirler tablosunu olusturma
 - Partial View
-- 
+## Bolum-12
+- Personel Detay Sayfasi
