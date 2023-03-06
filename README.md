@@ -113,4 +113,5 @@ Code First yaklasimina gore proje hazirlanmistir.
 - Partial View kayit ol ekrani
 - Kayit ol
 - web panel ekleme
+- Authentication 
 - 
