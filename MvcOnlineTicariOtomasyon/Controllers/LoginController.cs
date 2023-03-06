@@ -39,27 +39,35 @@ namespace MvcOnlineTicariOtomasyon.Controllers
         public ActionResult CariLogin(Cariler p)
         {
             var bilgiler = c.Carilers.FirstOrDefault(x => x.CariMail == p.CariMail && x.Sifre == p.Sifre);
-            if (bilgiler !=null)
+            if (bilgiler != null)
             {
                 FormsAuthentication.SetAuthCookie(bilgiler.CariMail, false);
                 Session["CariMail"] = bilgiler.CariMail.ToString();
                 return RedirectToAction("Index", "CariPanel");
             }
-           
+
 
             return View();
         }
-      
+
 
         [HttpGet]
-        public PartialViewResult Partial3()
+        public ActionResult AdminLogin()
         {
             return PartialView();
         }
         [HttpPost]
-        public PartialViewResult Partial3(Cariler cari)
+        public ActionResult AdminLogin(Admin p)
         {
-            return PartialView();
+            var bilgiler = c.Admins.FirstOrDefault(x => x.KullaniciAd == p.KullaniciAd && x.Sifre == p.Sifre);
+            if (bilgiler != null)
+            {
+                FormsAuthentication.SetAuthCookie(bilgiler.KullaniciAd, false);
+                Session["KullaniciAd"] = bilgiler.KullaniciAd.ToString();
+                return RedirectToAction("Index", "Kategori");
+
+            }
+            return RedirectToAction("Index","Login");
         }
     }
 }

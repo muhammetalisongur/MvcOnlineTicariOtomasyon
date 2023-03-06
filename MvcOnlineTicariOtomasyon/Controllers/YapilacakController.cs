@@ -29,7 +29,7 @@ namespace MvcOnlineTicariOtomasyon.Controllers
        
 
         [HttpPost]
-        public ActionResult tiklama(Yapilacak y)
+        public ActionResult tiklama(bool x)
         {
             
             
