@@ -141,6 +141,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\IstatistikController.cs" />
     <Compile Include="Controllers\KategoriController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\PersonelController.cs" />
     <Compile Include="Controllers\SatisController.cs" />
     <Compile Include="Controllers\UrunController.cs" />
@@ -2435,6 +2436,15 @@
     <Content Include="Template\web2\resimler\book5.jpg" />
     <Content Include="Template\web2\resimler\img1.jpg" />
     <Content Include="Template\web2\w3layouts-License.txt" />
+    <Content Include="Template\weblogin\css\font-awesome.css" />
+    <Content Include="Template\weblogin\css\popup-box.css" />
+    <Content Include="Template\weblogin\css\style.css" />
+    <Content Include="Template\weblogin\fonts\fontawesome-webfont.svg" />
+    <Content Include="Template\weblogin\images\bg.jpg" />
+    <Content Include="Template\weblogin\index.html" />
+    <Content Include="Template\weblogin\js\jquery-2.1.4.min.js" />
+    <Content Include="Template\weblogin\js\jquery.magnific-popup.js" />
+    <Content Include="Template\weblogin\w3layouts-License.txt" />
     <Content Include="Template\Web\.gitignore" />
     <Content Include="Template\Web\dist\401.html" />
     <Content Include="Template\Web\dist\404.html" />
@@ -2959,6 +2969,12 @@
     <Content Include="Template\MCDatepicker-master\src\scss\_tools.transitions.scss" />
     <Content Include="Template\MCDatepicker-master\src\scss\_utilities.display.scss" />
     <Content Include="Views\Yapilacak\YapilacakGetir.cshtml" />
+    <Content Include="Template\weblogin\fonts\fontawesome-webfont.eot" />
+    <Content Include="Template\weblogin\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Template\weblogin\fonts\fontawesome-webfont.woff" />
+    <Content Include="Template\weblogin\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Template\weblogin\fonts\FontAwesome.otf" />
+    <Content Include="Views\Login\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
