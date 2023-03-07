@@ -141,3 +141,5 @@ Code First yaklasimina gore proje hazirlanmistir.
 
 ## Bolum-17
 - Urunlerde satis yap sayfasi ekleme
+- iki inputtaki sayiyi 3 inputa otomatik toplamini yada carpini yazdirma
+- 

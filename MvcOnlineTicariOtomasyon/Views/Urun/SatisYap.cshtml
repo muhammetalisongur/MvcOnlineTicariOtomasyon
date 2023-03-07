@@ -18,13 +18,13 @@
     @Html.TextBoxFor(x => x.CariID, new { @class = "form-control" })
     <br />
     <b> @Html.LabelFor(x => x.Adet)</b>
-    @Html.TextBoxFor(x => x.Adet, new { @class = "form-control" })
+    <input type="text" min="0" class="form-control" id="text1" onkeyup="sum();" name="Adet" />
     <br />
     <b> @Html.LabelFor(x => x.Fiyat)</b>
-    <input type="text" name="Fiyat" value="@ViewBag.dg2" class="form-control" />
+    <input type="text"  value="@ViewBag.dg2" class="form-control" id="text2" onkeyup="sum();"  name="Fiyat"/>
     <br />
     <b> @Html.LabelFor(x => x.ToplamTutar)</b>
-    @Html.TextBoxFor(x => x.ToplamTutar, new { @class = "form-control" })
+    <input type="text" id="text3" placeholder="Toplam" class="form-control" name="ToplamTutar"  readonly/>
     <br />
     <b> @Html.LabelFor(x => x.Tarih)</b>
     @Html.TextBoxFor(x => x.Tarih, new { @class = "form-control" })
@@ -33,3 +33,20 @@
 
     <button class="btn btn-primary">Satis Yap</button>
 </form>
+
+
+
+@*<input type="text" id="text1" onkeyup="sum();" placeholder="1.sayiyi giriniz" />
+<input type="text" id="text2" onkeyup="sum();" placeholder="2.sayiyi giriniz" />
+<input type="text" id="text3" placeholder="Toplam" />*@
+
+<script>
+    function sum() {
+        var sayi1 = document.getElementById("text1").value;
+        var sayi2 = document.getElementById("text2").value;
+        var sonuc = parseInt(sayi1) * parseInt(sayi2);
+        if (!isNaN(sonuc)) {
+            document.getElementById("text3").value = sonuc;
+        }
+    }
+</script>
