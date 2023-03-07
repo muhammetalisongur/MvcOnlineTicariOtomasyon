@@ -33,6 +33,8 @@ Code First yaklasimina gore proje hazirlanmistir.
 - cari resim guncelleme
 - admin giris hatali girise uyari verme
 - fatura popup olarak alinan kalemleri gosterme
+- personel guncelleme isleminde urunm gorselini guncelleme yapmak istemezsek yapmayalim
+
 
 ## Bolum-1
 - Siniflar Olusturuldu

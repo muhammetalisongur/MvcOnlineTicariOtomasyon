@@ -59,41 +59,35 @@ namespace MvcOnlineTicariOtomasyon.Controllers
             var bul = c.Personels.Find(id);
             return View("PersonelGetir", bul);
         }
-        public ActionResult PersonelGuncelle(Personel p, HttpPostedFile PersonelGorsel)
+        public ActionResult PersonelGuncelle(Personel x, HttpPostedFileBase PersonelGorsel)
+
         {
 
-            var per = c.Personels.Find(p.PersonelID);
-
+            var gnc = c.Personels.Find(x.PersonelID);
+            gnc.PersonelAd = x.PersonelAd;
+            gnc.PersonelSoyad = x.PersonelSoyad;
+            gnc.DepartmanID = x.DepartmanID;
 
             if (ModelState.IsValid)
-            {             
+            {
 
                 if (PersonelGorsel != null)
                 {
+
                     string dosyaadi = Path.GetFileName(PersonelGorsel.FileName);
                     string yol = "/Images/" + dosyaadi;
-
                     PersonelGorsel.SaveAs(Server.MapPath(yol));
+                    gnc.PersonelGorsel = yol;
+                }
 
-                    p.PersonelGorsel = yol;
-                }                                   
             }
-            if (Request.Files.Count > 0)
-            {
-                string dosyaadi = Path.GetFileName(Request.Files[0].FileName);
-                string uzanti = Path.GetExtension(Request.Files[0].FileName);
-                string yol = "~/Images/" + dosyaadi + uzanti;
-                Request.Files[0].SaveAs(Server.MapPath(yol));
-                p.PersonelGorsel = "/Images/" + dosyaadi + uzanti;
-            }
-            per.PersonelAd = p.PersonelAd;
-            per.PersonelSoyad = p.PersonelSoyad;
-            
-            per.DepartmanID = p.DepartmanID;
-
             c.SaveChanges();
+
             return RedirectToAction("Index");
+
         }
+
+
 
         public ActionResult PersonelListe()
         {

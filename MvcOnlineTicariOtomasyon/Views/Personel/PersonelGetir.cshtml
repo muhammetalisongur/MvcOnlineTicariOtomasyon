@@ -26,7 +26,7 @@
         @Html.Label("Gorseli Degistir:")
 
         <input type="file" name="PersonelGorsel" />
-        @*@Html.TextBoxFor(x => x.PersonelGorsel, new { @class = "form-control" })*@
+
         <br />
         @Html.Label("Departman:")
         @Html.DropDownListFor(x => x.DepartmanID, (List<SelectListItem>)ViewBag.deger, new { @class = "form-control" })
