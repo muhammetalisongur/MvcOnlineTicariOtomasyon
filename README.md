@@ -32,6 +32,7 @@ Code First yaklasimina gore proje hazirlanmistir.
 - cari panel bilgileri guncelleeme
 - cari resim guncelleme
 - admin giris hatali girise uyari verme
+- fatura popup olarak alinan kalemleri gosterme
 
 ## Bolum-1
 - Siniflar Olusturuldu

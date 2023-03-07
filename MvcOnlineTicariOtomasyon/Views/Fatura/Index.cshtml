@@ -8,10 +8,10 @@
     <tr>
 
         <td>Seri-Sira No</td>
-       
+
         <td>Tarih</td>
         <td>Saat</td>
-     
+
         <td>Toplam</td>
         <td>Guncelle</td>
         <td>Detaylar</td>
@@ -22,10 +22,10 @@
     {
         <tr>
             <td>@item.FaturaSeriNo @item.FaturaSiraNo</td>
-   
+
             <td>@item.Tarih.ToString("dd MMMM yyyy")</td>
             <td>@item.Saat</td>
-    
+
             <td>@item.Toplam</td>
             <td><a href="/Fatura/FaturaGetir/@item.FaturaID" class="btn btn-warning">Güncelle</a></td>
             <td><a href="/Fatura/FaturaDetay/@item.FaturaID" class="btn btn-secondary">Fatura Detayi</a></td>
@@ -36,3 +36,36 @@
 </table>
 <a href="/Fatura/FaturaEkle/" class="btn btn-primary">Yeni Fatura Girisi</a>
 
+<br />
+<br />
+<button type="button" style="background-color:seagreen" class="btn btn-danger" data-toggle="modal" data-target="#Modal1">Popup Penceresi</button>
+
+<div class="modal" id="Modal1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Popup Diyalog Ekrani</h2>
+            </div>
+            <div class="modal-body">
+                <table class="table table-active">
+                    <tr>
+                       <td>Seri No</td>
+                       <td>Sira No</td>
+                       <td>Tutar</td>
+                    </tr>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.FaturaSeriNo</td>
+                            <td>@item.FaturaSiraNo</td>
+                            <td>@item.Toplam</td>
+                        </tr>
+                    }
+                </table>
+                <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Tamam</button>
+            </div>
+        </div>
+    </div>
+
+
+</div>
