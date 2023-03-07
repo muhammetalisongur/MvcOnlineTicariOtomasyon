@@ -135,4 +135,7 @@ Code First yaklasimina gore proje hazirlanmistir.
 - Popup olusturma
 - Bilgisayardan dosya yukleme isleminde
 
+## Bolum-16
+- Alert kullanimi
+
 
