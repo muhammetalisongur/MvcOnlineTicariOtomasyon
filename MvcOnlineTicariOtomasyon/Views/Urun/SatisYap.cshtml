@@ -1,0 +1,35 @@
+﻿@model MvcOnlineTicariOtomasyon.Models.Siniflar.SatisHareket
+@{
+    ViewBag.Title = "SatisYap";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<br />
+<h2>Satis Yap</h2>
+<br />
+<form class="form-group" method="post">
+
+    <b> @Html.LabelFor(x => x.UrunID)</b>
+    <input type="text" name="UrunID" value="@ViewBag.dgr1" class="form-control" readonly />
+    <br />
+    <b> @Html.LabelFor(x => x.PersonelID)</b>
+    @Html.DropDownListFor(x => x.PersonelID, (List<SelectListItem>)ViewBag.dgr3, new { @class = "form-control" })
+    <br />
+    <b> @Html.LabelFor(x => x.CariID)</b>
+    @Html.TextBoxFor(x => x.CariID, new { @class = "form-control" })
+    <br />
+    <b> @Html.LabelFor(x => x.Adet)</b>
+    @Html.TextBoxFor(x => x.Adet, new { @class = "form-control" })
+    <br />
+    <b> @Html.LabelFor(x => x.Fiyat)</b>
+    <input type="text" name="Fiyat" value="@ViewBag.dg2" class="form-control" />
+    <br />
+    <b> @Html.LabelFor(x => x.ToplamTutar)</b>
+    @Html.TextBoxFor(x => x.ToplamTutar, new { @class = "form-control" })
+    <br />
+    <b> @Html.LabelFor(x => x.Tarih)</b>
+    @Html.TextBoxFor(x => x.Tarih, new { @class = "form-control" })
+    <br />
+
+
+    <button class="btn btn-primary">Satis Yap</button>
+</form>

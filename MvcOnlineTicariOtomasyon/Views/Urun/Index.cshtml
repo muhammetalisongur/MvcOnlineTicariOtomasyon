@@ -24,6 +24,7 @@
         <th>Kategori</th>
         <th>Güncelle</th>
         <th>Sil</th>
+        <th>Satis Yap</th>
     </tr>
     @foreach (var item in Model)
     {
@@ -36,6 +37,7 @@
             <th>@item.Kategori.KategoriAd</th>
             <th><a href="/Urun/UrunGetir/@item.UrunID" class="btn btn-warning">Güncelle</a></th>
             <th><a href="/Urun/UrunSil/@item.UrunID" class="btn btn-danger">Sil</a></th>
+            <th><a href="/Urun/SatisYap/@item.UrunID" class="btn btn-success">Satis Yap</a></th>
         </tr>
     }
 

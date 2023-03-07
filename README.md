@@ -137,5 +137,7 @@ Code First yaklasimina gore proje hazirlanmistir.
 
 ## Bolum-16
 - Alert kullanimi
+- sweet alert 
 
-
+## Bolum-17
+- Urunlerde satis yap sayfasi ekleme
