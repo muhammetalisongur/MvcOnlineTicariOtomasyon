@@ -133,4 +133,6 @@ Code First yaklasimina gore proje hazirlanmistir.
 - Arama kutusu urunlere
 - tutar ekle trigger olusturuldu
 - Popup olusturma
-- 
+- Bilgisayardan dosya yukleme isleminde
+
+
