@@ -128,3 +128,6 @@ Code First yaklasimina gore proje hazirlanmistir.
 - Admin Giris
 - PagedList kategorilere
 - Arama kutusu urunlere
+- tutar ekle trigger olusturuldu
+- Popup olusturma
+- 
