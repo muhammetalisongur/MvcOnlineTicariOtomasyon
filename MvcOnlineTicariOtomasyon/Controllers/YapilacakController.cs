@@ -15,11 +15,11 @@ namespace MvcOnlineTicariOtomasyon.Controllers
         {
             var deger1 = c.Carilers.Count().ToString();
             ViewBag.cari = deger1;
-            var deger2 = c.Uruns.Sum(x => x.Stok).ToString();
+            var deger2 = c.Uruns.Sum(x => (int?)x.Stok).ToString();
             ViewBag.urun = deger2;
-            var deger3 = c.SatisHarekets.Sum(x => x.Adet).ToString();
+            var deger3 = c.SatisHarekets.Sum(x => (int?)x.Adet).ToString();
             ViewBag.satis = deger3;
-            var deger4 = c.SatisHarekets.Sum(x => x.ToplamTutar).ToString();
+            var deger4 = c.SatisHarekets.Sum(x => (int?)x.ToplamTutar).ToString();
             ViewBag.toplam = deger4;
 
             var yapilacaklar = c.Yapilacaks.ToList();

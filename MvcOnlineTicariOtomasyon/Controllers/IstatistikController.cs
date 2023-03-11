@@ -23,7 +23,7 @@ namespace MvcOnlineTicariOtomasyon.Controllers
             ViewBag.d3 = deger3;
             var deger4 = c.Kategoris.Count().ToString();
             ViewBag.d4 = deger4;
-            var deger5 = c.Uruns.Sum(x => x.Stok).ToString();
+            var deger5 = c.Uruns.Sum(x => (int?)x.Stok).ToString();
             ViewBag.d5 = deger5;
             var deger6 = (from x in c.Uruns select x.Marka).Distinct().Count().ToString();
             ViewBag.d6 = deger6;
@@ -45,7 +45,7 @@ namespace MvcOnlineTicariOtomasyon.Controllers
             var deger13 = c.Uruns.Where(u => u.UrunID == (c.SatisHarekets.GroupBy(x => x.UrunID).OrderByDescending(z => z.Count()).Select(y => y.Key).FirstOrDefault())).Select(k=>k.UrunAd).FirstOrDefault();
             ViewBag.d13 = deger13;
 
-            var deger14 = c.SatisHarekets.Sum(x => x.ToplamTutar).ToString();
+            var deger14 = c.SatisHarekets.Sum(x => (int?)x.ToplamTutar).ToString();
             ViewBag.d14 = deger14;
 
             DateTime bugun = DateTime.Today;
