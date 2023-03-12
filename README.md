@@ -150,3 +150,5 @@ Code First yaklasimina gore proje hazirlanmistir.
 - kargo takip arama kutusunu takip numarasi ile yapma
 - kargo takip yonlendirmesinde router config ayari
 
+## Bolum-19
+- QR kod dll dosyasi eklendi
