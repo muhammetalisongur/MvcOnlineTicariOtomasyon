@@ -2,6 +2,7 @@
 using PagedList;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -40,6 +41,15 @@ namespace MvcOnlineTicariOtomasyon.Controllers
         [HttpPost]
         public ActionResult YeniUrun(Urun u)
         {
+            if (Request.Files.Count > 0)
+            {
+                string dosyaadi = Path.GetFileName(Request.Files[0].FileName);
+                string uzanti = Path.GetExtension(Request.Files[0].FileName);
+                string yol = "~/Images/" + dosyaadi + uzanti;
+                Request.Files[0].SaveAs(Server.MapPath(yol));
+                u.UrunGorsel = "/Images/" + dosyaadi + uzanti;
+            }
+            u.Durum = true;
             c.Uruns.Add(u);
             c.SaveChanges();
             return RedirectToAction("Index");
@@ -63,8 +73,9 @@ namespace MvcOnlineTicariOtomasyon.Controllers
             var urundeger = c.Uruns.Find(id);
             return View("UrunGetir", urundeger);
         }
-        public ActionResult UrunGuncelle(Urun u)
+        public ActionResult UrunGuncelle(Urun u, HttpPostedFileBase UrunGorsel)
         {
+
             var urn = c.Uruns.Find(u.UrunID);
             urn.AlisFiyat = u.AlisFiyat;
             urn.Durum = u.Durum;
@@ -73,7 +84,20 @@ namespace MvcOnlineTicariOtomasyon.Controllers
             urn.SatisFiyat = u.SatisFiyat;
             urn.Stok = u.Stok;
             urn.UrunAd = u.UrunAd;
-            urn.UrunGorsel = u.UrunGorsel;
+
+            if (ModelState.IsValid)
+            {
+
+                if (UrunGorsel != null)
+                {
+
+                    string dosyaadi = Path.GetFileName(UrunGorsel.FileName);
+                    string yol = "/Images/" + dosyaadi;
+                    UrunGorsel.SaveAs(Server.MapPath(yol));
+                    urn.UrunGorsel = yol;
+                }
+
+            }
             c.SaveChanges();
             return RedirectToAction("Index");
 

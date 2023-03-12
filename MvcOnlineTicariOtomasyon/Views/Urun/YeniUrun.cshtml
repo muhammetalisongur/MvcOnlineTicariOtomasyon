@@ -6,33 +6,33 @@
 <br />
 <h2>Yeni Ürün Sayfası</h2>
 <br />
+@using (Html.BeginForm("YeniUrun", "Urun", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <form class="form-group" method="post">
 
-<form class="form-group" method="post">
+        <b> @Html.Label("Ürün Ad")</b>
+        @Html.TextBoxFor(x => x.UrunAd, new { @class = "form-control" })
+        <br />
+        <b> @Html.Label("Marka")</b>
+        @Html.TextBoxFor(x => x.Marka, new { @class = "form-control" })
+        <br />
+        <b> @Html.Label("Stok")</b>
+        @Html.TextBoxFor(x => x.Stok, new { @class = "form-control" })
+        <br />
+        <b> @Html.Label("Alış Fiyat")</b>
+        @Html.TextBoxFor(x => x.AlisFiyat, new { @class = "form-control" })
+        <br />
+        <b> @Html.Label("Satış Fiyat")</b>
+        @Html.TextBoxFor(x => x.SatisFiyat, new { @class = "form-control" })
+        <br />
+        <b> @Html.Label("Ürün Görsel")</b>
+        <input type="file" name="UrunGorsel" />
+        @*@Html.TextBoxFor(x => x.UrunGorsel, new { @class = "form-control" })*@
+        <br />
+        <b> @Html.Label("Kategori Ad")</b>
+        @Html.DropDownListFor(x => x.KategoriID, (List<SelectListItem>)ViewBag.dgr, new { @class = "form-control" })
+        <br />
 
-    <b> @Html.Label("Ürün Ad")</b>
-    @Html.TextBoxFor(x => x.UrunAd, new { @class = "form-control" })
-    <br />
-    <b> @Html.Label("Marka")</b>
-    @Html.TextBoxFor(x => x.Marka, new { @class = "form-control" })
-    <br />
-    <b> @Html.Label("Stok")</b>
-    @Html.TextBoxFor(x => x.Stok, new { @class = "form-control" })
-    <br />
-    <b> @Html.Label("Alış Fiyat")</b>
-    @Html.TextBoxFor(x => x.AlisFiyat, new { @class = "form-control" })
-    <br />
-    <b> @Html.Label("Satış Fiyat")</b>
-    @Html.TextBoxFor(x => x.SatisFiyat, new { @class = "form-control" })
-    <br />
-    <b> @Html.Label("Durum")</b>
-    @Html.TextBoxFor(x => x.Durum, new { @class = "form-control" })
-    <br />
-    <b> @Html.Label("Ürün Görsel")</b>
-    @Html.TextBoxFor(x => x.UrunGorsel, new { @class = "form-control" })
-    <br />
-    <b> @Html.Label("Kategori Ad")</b>
-    @Html.DropDownListFor(x => x.KategoriID, (List<SelectListItem>)ViewBag.dgr , new {@class = "form-control"})
-    <br />
-
-    <button class="btn btn-primary">Yeni Ürün Ekle</button>
-</form>
+        <button class="btn btn-primary">Yeni Ürün Ekle</button>
+    </form>
+}
