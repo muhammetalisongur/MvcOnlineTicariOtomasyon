@@ -144,6 +144,8 @@ Code First yaklasimina gore proje hazirlanmistir.
 - iki inputtaki sayiyi 3 inputa otomatik toplamini yada carpini yazdirma
 - Urunlerdeki satis yap fiyat adet ile carpma sonucu toplam tutara yazma 
 
-## Bolum-17
+## Bolum-18
 - Kargo Takip ve Kargo Detay sinifi Olusturuldu
 - Kargo takip de random veri olusturma
+- kargo takip arama kutusunu takip numarasi ile yapma
+- kargo takip yonlendirmesinde router config ayari
