@@ -3042,6 +3042,7 @@
     <Content Include="Views\Alert\Index.cshtml" />
     <Content Include="Views\Urun\SatisYap.cshtml" />
     <Content Include="Views\Kargo\Index.cshtml" />
+    <Content Include="Views\Kargo\YeniKargo.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

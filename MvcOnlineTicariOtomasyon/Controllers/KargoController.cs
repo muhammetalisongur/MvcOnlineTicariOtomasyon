@@ -2,7 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 
 namespace MvcOnlineTicariOtomasyon.Controllers
@@ -10,11 +9,36 @@ namespace MvcOnlineTicariOtomasyon.Controllers
     public class KargoController : Controller
     {
         // GET: Kargo
-        Context c = new Context();
+        private Context c = new Context();
         public ActionResult Index()
         {
-            var kargolar = c.KargoDetays.ToList();
+            List<KargoDetay> kargolar = c.KargoDetays.ToList();
             return View(kargolar);
+        }
+
+        [HttpGet]
+        public ActionResult YeniKargo()
+        {
+            Random random = new Random();
+            string[] karakterler = { "A", "B", "C", "D", "E", "F", "G", "H", "K" };
+            int k1, k2, k3;
+            k1 = random.Next(0, karakterler.Length);
+            k2 = random.Next(0, karakterler.Length);
+            k3 = random.Next(0, karakterler.Length);
+            int s1, s2, s3;
+            s1 = random.Next(100, 1000); // 10=> 3 1 2 1 2 1
+            s2 = random.Next(10, 99);
+            s3 = random.Next(10, 99);
+            string kod = s1.ToString() + karakterler[k1] + s2 + karakterler[k2] + s3 + karakterler[k3];
+            ViewBag.takipkod = kod;
+            return View();
+        }
+        [HttpPost]
+        public ActionResult YeniKargo(KargoDetay d)
+        {
+            c.KargoDetays.Add(d);
+            c.SaveChanges();
+            return RedirectToAction("Index");
         }
     }
 }

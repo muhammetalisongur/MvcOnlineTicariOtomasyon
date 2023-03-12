@@ -146,3 +146,4 @@ Code First yaklasimina gore proje hazirlanmistir.
 
 ## Bolum-17
 - Kargo Takip ve Kargo Detay sinifi Olusturuldu
+- Kargo takip de random veri olusturma
