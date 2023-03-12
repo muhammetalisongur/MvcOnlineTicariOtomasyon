@@ -143,3 +143,6 @@ Code First yaklasimina gore proje hazirlanmistir.
 - Urunlerde satis yap sayfasi ekleme
 - iki inputtaki sayiyi 3 inputa otomatik toplamini yada carpini yazdirma
 - Urunlerdeki satis yap fiyat adet ile carpma sonucu toplam tutara yazma 
+
+## Bolum-17
+- Kargo Takip ve Kargo Detay sinifi Olusturuldu
