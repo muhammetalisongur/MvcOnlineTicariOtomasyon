@@ -10,10 +10,14 @@ namespace MvcOnlineTicariOtomasyon.Controllers
     {
         // GET: Kargo
         private Context c = new Context();
-        public ActionResult Index()
+        public ActionResult Index(string p)
         {
-            List<KargoDetay> kargolar = c.KargoDetays.ToList();
-            return View(kargolar);
+            IQueryable<KargoDetay> k = from x in c.KargoDetays select x;
+            if (!string.IsNullOrEmpty(p))
+            {
+                k = k.Where(y => y.TakipKodu.Contains(p));
+            }
+            return View(k.ToList());
         }
 
         [HttpGet]
@@ -39,6 +43,12 @@ namespace MvcOnlineTicariOtomasyon.Controllers
             c.KargoDetays.Add(d);
             c.SaveChanges();
             return RedirectToAction("Index");
+        }
+
+        public ActionResult KargoTakip(string id)
+        {
+            var degerler = c.KargoTakips.Where(x => x.TakipKodu == id).ToList();
+            return View(degerler);
         }
     }
 }

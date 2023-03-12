@@ -18,6 +18,7 @@
         <td>Personel</td>
         <td>Alici</td>
         <td>Tarih</td>
+        <td>Kargo Takip</td>
         <td>Detaylar</td>
     </tr>
     @foreach (var item in Model)
@@ -25,8 +26,9 @@
         <tr>
             <td>@item.Personel</td>
             <td>@item.Alici</td>
-            <td>@item.Tarih</td>
-            <td><a href="/Departman/DepartmanDetay/@item.KargoDetayID" class="btn btn-secondary">Kargo Detay</a></td>
+            <td>@item.Tarih.ToString("dd MMMM yyyy")</td>
+            <td>@item.TakipKodu</td>
+            <td><a href="/Kargo/KargoTakip/@item.TakipKodu" class="btn btn-secondary">Kargo Detay</a></td>
         </tr>
     }
 </table>
