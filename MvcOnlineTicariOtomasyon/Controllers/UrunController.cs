@@ -1,12 +1,10 @@
 ﻿using MvcOnlineTicariOtomasyon.Models.Siniflar;
-using PagedList;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using System.Web.UI;
 
 namespace MvcOnlineTicariOtomasyon.Controllers
 {
@@ -125,7 +123,27 @@ namespace MvcOnlineTicariOtomasyon.Controllers
         [HttpPost]
         public ActionResult SatisYap(SatisHareket s)
         {
-            return View();
+
+            var urunFiyat = c.Uruns.Where(x => x.UrunID == s.UrunID).Select(z => z.SatisFiyat).FirstOrDefault();
+            var urunStok = c.Uruns.Where(x => x.UrunID == s.UrunID).Select(z => z.Stok).FirstOrDefault();
+
+
+            if (urunStok >= s.Adet)
+            {
+                urunStok = (short)(urunStok - s.Adet);
+
+                var kalanStok = c.Uruns.Find(s.UrunID);
+                kalanStok.Stok = urunStok;
+
+                s.Tarih = DateTime.Parse(DateTime.Now.ToShortDateString());
+                c.SatisHarekets.Add(s);
+                c.SaveChanges();
+                return RedirectToAction("Index", "Satis");
+            }
+            else
+                return RedirectPermanent("~/Urun/UrunGetir/" + s.UrunID);
+
+
         }
     }
 }

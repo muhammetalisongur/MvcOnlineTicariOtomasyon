@@ -34,7 +34,7 @@ Code First yaklasimina gore proje hazirlanmistir.
 - admin giris hatali girise uyari verme
 - fatura popup olarak alinan kalemleri gosterme
 - personel guncelleme isleminde urunm gorselini guncelleme yapmak istemezsek yapmayalim
-
+- Urunlerde satis yapilinca stok otomatik dusmesini sagla
 
 ## Bolum-1
 - Siniflar Olusturuldu
@@ -142,4 +142,4 @@ Code First yaklasimina gore proje hazirlanmistir.
 ## Bolum-17
 - Urunlerde satis yap sayfasi ekleme
 - iki inputtaki sayiyi 3 inputa otomatik toplamini yada carpini yazdirma
-- 
+- Urunlerdeki satis yap fiyat adet ile carpma sonucu toplam tutara yazma 
