@@ -1,9 +1,8 @@
 ﻿
 @{
-    ViewBag.Title = "Index5";
+    ViewBag.Title = "Index6";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 <h4>Google Chart View Kodları</h4>
@@ -93,9 +92,9 @@
 
 
 
-            var columnChart = new google.visualization.PieChart(document
+            var columnChart = new google.visualization.LineChart(document
 
-                .getElementById('piechart_div'));
+                .getElementById('linechart_div'));
 
 
 
@@ -109,7 +108,7 @@
 
 <body>
 
-    <div id="piechart_div"></div>
+    <div id="linechart_div"></div>
 
     @*<a href="@Url.Action("PieChart")" class="btn btn-danger">Pie Chart</a>
 
@@ -120,3 +119,5 @@
 </body>
 
 </html>
+
+

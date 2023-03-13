@@ -1,6 +1,6 @@
 ﻿
 @{
-    ViewBag.Title = "Index5";
+    ViewBag.Title = "Index7";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
@@ -93,9 +93,9 @@
 
 
 
-            var columnChart = new google.visualization.PieChart(document
+            var columnChart = new google.visualization.ColumnChart(document
 
-                .getElementById('piechart_div'));
+                .getElementById('columnchart_div'));
 
 
 
@@ -109,7 +109,7 @@
 
 <body>
 
-    <div id="piechart_div"></div>
+    <div id="columnchart_div"></div>
 
     @*<a href="@Url.Action("PieChart")" class="btn btn-danger">Pie Chart</a>
 
@@ -120,3 +120,5 @@
 </body>
 
 </html>
+
+
