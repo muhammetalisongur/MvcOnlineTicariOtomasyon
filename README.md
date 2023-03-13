@@ -154,3 +154,6 @@ Code First yaklasimina gore proje hazirlanmistir.
 ## Bolum-19
 - QR kod dll dosyasi eklendi
 - qr kod eklendi
+
+## Bolum-20
+- Grafik olusturma
