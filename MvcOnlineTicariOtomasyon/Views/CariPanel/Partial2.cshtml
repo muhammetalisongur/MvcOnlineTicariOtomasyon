@@ -1,0 +1,65 @@
+﻿@model List<MvcOnlineTicariOtomasyon.Models.Siniflar.Mesajlar>
+
+@{ List<string> tarih = new List<string>();}
+
+
+
+<div class="timeline timeline-inverse">
+    @foreach (var item in Model)
+    {
+        string tar = item.Tarih.ToString("dd/MM/yyyy");
+        <!-- timeline time label -->
+        if (!tarih.Contains(tar))
+        {
+
+            <div class="time-label">
+
+                <span class="bg-success">
+                    @item.Tarih.ToString("dd/MM/yyyy")
+
+                </span>
+
+            </div>
+
+            <!--tarihi listeye ekle-->
+            tarih.Add(tar);
+        }
+
+        @*<div class="time-label">
+
+                <span class="bg-success">
+
+                    @item.Tarih.ToString("dd MMMM yyyy")
+
+                </span>
+
+            </div>*@
+
+        <!-- /.timeline-label -->
+        <!-- timeline item -->
+
+        <div>
+
+            <i class="fas fa-envelope bg-primary"></i>
+
+            <div class="timeline-item">
+
+                <span class="time"><i class="far fa-clock"></i> @item.Tarih.ToShortTimeString()</span>
+
+                <h3 class="timeline-header"><a href="#">@item.Konu</a> </h3>
+
+                <div class="timeline-body">
+                    @item.Icerik
+                </div>
+
+
+
+            </div>
+
+        </div>
+    }
+    <div>
+        <i class="far fa-clock bg-gray"></i>
+    </div>
+
+</div>

@@ -184,6 +184,24 @@ namespace MvcOnlineTicariOtomasyon.Controllers
 
             return PartialView("Partial1", caribul);
         }
+        public PartialViewResult Partial2()
+        {
+            var veriler = c.Mesajlars.Where(x => x.Gonderici == "admin").OrderByDescending(y=>y.Tarih).ToList(); 
+            return PartialView(veriler);
+        }
+        
+        public ActionResult CariBilgiGuncelle(Cariler cr)
+        {
+            var cari = c.Carilers.Find(cr.CariID);
+            cari.CariAd = cr.CariAd;
+            cari.CariSoyad = cr.CariSoyad;
+            cari.CariMail = cr.CariMail;
+            cari.CariSehir = cr.CariSehir;
+            cari.Sifre = cr.Sifre;
+            c.SaveChanges();
+            return RedirectToAction("Index");
+
+        }
     }
 
 }

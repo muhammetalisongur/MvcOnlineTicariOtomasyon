@@ -39,6 +39,7 @@ Code First yaklasimina gore proje hazirlanmistir.
 - cari panelde eksik olan yerleri tamamla
 - Mesaj gonderde substring kisa hatasi cozum
 - cari panelde satin alinan urunlerin resimlerini goster
+- duyurular da timeline asagiya kadar listeleme
 
 ## Bolum-1
 - Siniflar Olusturuldu
@@ -179,4 +180,6 @@ Code First yaklasimina gore proje hazirlanmistir.
 - Cari panel profil sayfasi ekleme
 - Sayfa Duzenleme
 - cari profilde mesajlar ekleme
-- 
+- Duyurular paneli
+- ayarlar kismi
+- duyurular
