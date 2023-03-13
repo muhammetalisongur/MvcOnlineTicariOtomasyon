@@ -35,6 +35,7 @@ Code First yaklasimina gore proje hazirlanmistir.
 - fatura popup olarak alinan kalemleri gosterme
 - personel guncelleme isleminde urunm gorselini guncelleme yapmak istemezsek yapmayalim
 - Urunlerde satis yapilinca stok otomatik dusmesini sagla
+- qr kod kargo takip image olarak ekle
 
 ## Bolum-1
 - Siniflar Olusturuldu
@@ -152,3 +153,4 @@ Code First yaklasimina gore proje hazirlanmistir.
 
 ## Bolum-19
 - QR kod dll dosyasi eklendi
+- qr kod eklendi
