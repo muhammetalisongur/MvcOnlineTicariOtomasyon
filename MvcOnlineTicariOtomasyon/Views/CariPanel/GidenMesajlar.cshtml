@@ -1,4 +1,4 @@
-﻿
+﻿@model List<MvcOnlineTicariOtomasyon.Models.Siniflar.Mesajlar>
 @{
     ViewBag.Title = "GidenMesajlar";
     Layout = "~/Views/Shared/_CariLayout.cshtml";
@@ -343,7 +343,7 @@
 
                                             <td class="mailbox-star"><a href="#"><i class="fas fa-star text-warning"></i></a></td>
 
-                                            <td class="mailbox-name"><a href="read-mail.html">@item.Alici</a></td>
+                                            <td class="mailbox-name"><a href="/CariPanel/MesajDetay/@item.MesajID">@item.Alici</a></td>
 
                                             <td class="mailbox-subject">
 

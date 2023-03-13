@@ -82,6 +82,28 @@ namespace MvcOnlineTicariOtomasyon.Controllers
             return View(mesajlar);
         }
 
+        public ActionResult MesajDetay(int id)
+        {
+            var degerler = c.Mesajlars.Where(x => x.MesajID == id).ToList();
+            var mail = (string)Session["CariMail"];
+            var mesajlar = c.Mesajlars.Where(x => x.Gonderici == mail).ToList();
+            if (mesajlar != null)
+            {
+                var gelensayisi = c.Mesajlars.Count(x => x.Alici == mail).ToString();
+                ViewBag.d1 = gelensayisi;
+            }
+            else
+                ViewBag.d1 = 0;
+            if (mesajlar != null)
+            {
+                var gidensayisi = c.Mesajlars.Count(x => x.Gonderici == mail).ToString();
+                ViewBag.d2 = gidensayisi;
+            }
+            else
+                ViewBag.d2 = 0;
+            return View(degerler);
+        }
+
         [HttpGet]
         public ActionResult YeniMesaj()
         {
