@@ -451,3 +451,5 @@ C:\Users\MAS\Documents\GitHub\MvcOnlineTicariOtomasyon\MvcOnlineTicariOtomasyon\
 C:\Users\MAS\Documents\GitHub\MvcOnlineTicariOtomasyon\MvcOnlineTicariOtomasyon\obj\Debug\MvcOnlineTicariOtomasyon.Migrations.kargocreate.resources
 C:\Users\MAS\Documents\GitHub\MvcOnlineTicariOtomasyon\MvcOnlineTicariOtomasyon\obj\Debug\MvcOnlineTicariOtomasyon.Properties.Resources.resources
 C:\Users\MAS\Documents\GitHub\MvcOnlineTicariOtomasyon\MvcOnlineTicariOtomasyon\bin\QRCoder.dll
+D:\GitHub\MvcOnlineTicariOtomasyon\MvcOnlineTicariOtomasyon\obj\Debug\MvcOnlineTicariOtomasyon.Migrations.kargocreate.resources
+D:\GitHub\MvcOnlineTicariOtomasyon\MvcOnlineTicariOtomasyon\obj\Debug\MvcOnlineTicariOtomasyon.Properties.Resources.resources

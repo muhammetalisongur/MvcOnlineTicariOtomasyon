@@ -157,3 +157,5 @@ Code First yaklasimina gore proje hazirlanmistir.
 
 ## Bolum-20
 - Grafik olusturma
+- Veritabanindaki verile ile grafik olusturma
+- Google Chart View Kodları
