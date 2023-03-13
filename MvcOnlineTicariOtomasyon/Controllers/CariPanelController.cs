@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Security;
 
 namespace MvcOnlineTicariOtomasyon.Controllers
 {
@@ -41,7 +42,7 @@ namespace MvcOnlineTicariOtomasyon.Controllers
         public ActionResult GelenMesajlar()
         {
             var mail = (string)Session["CariMail"];
-            var mesajlar = c.Mesajlars.Where(x => x.Alici == mail).OrderByDescending(x=>x.MesajID).ToList();
+            var mesajlar = c.Mesajlars.Where(x => x.Alici == mail).OrderByDescending(x => x.MesajID).ToList();
             if (mesajlar != null)
             {
                 var gelensayisi = c.Mesajlars.Count(x => x.Alici == mail).ToString();
@@ -133,7 +134,26 @@ namespace MvcOnlineTicariOtomasyon.Controllers
             m.Gonderici = mail;
             c.Mesajlars.Add(m);
             c.SaveChanges();
-            return RedirectToAction("GelenMesajlar","CariPanel");
+            return RedirectToAction("GelenMesajlar", "CariPanel");
+        }
+        public ActionResult KargoTakip(string p)
+        {
+            var k = from x in c.KargoDetays select x;
+            k = k.Where(y => y.TakipKodu.Equals(p));
+
+            return View(k.ToList());
+        }
+        public ActionResult CariKargoTakip(string id)
+        {
+            var degerler = c.KargoTakips.Where(x => x.TakipKodu == id).ToList();
+            return View(degerler);
+        }
+
+        public ActionResult LogOut()
+        {
+            FormsAuthentication.SignOut();
+            Session.Abandon();
+            return RedirectToAction("Index", "Login");
         }
 
     }

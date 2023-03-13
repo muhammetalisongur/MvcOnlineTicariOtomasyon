@@ -167,3 +167,9 @@ Code First yaklasimina gore proje hazirlanmistir.
 - Mail gelen kutusu olusturma
 - Mail giden kutusu olusturma
 - Yeni Mesaj Gonder
+
+## Bolum-22
+- Cari Urun kargo
+- Cari kargo detay
+- cari kargo detay sira numarasi
+- Cikis Yap
