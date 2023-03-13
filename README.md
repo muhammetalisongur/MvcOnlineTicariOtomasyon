@@ -40,6 +40,7 @@ Code First yaklasimina gore proje hazirlanmistir.
 - Mesaj gonderde substring kisa hatasi cozum
 - cari panelde satin alinan urunlerin resimlerini goster
 - duyurular da timeline asagiya kadar listeleme
+- hata sayfasinda bir onceki sayfaya geri donme
 
 ## Bolum-1
 - Siniflar Olusturuldu
@@ -184,3 +185,8 @@ Code First yaklasimina gore proje hazirlanmistir.
 - ayarlar kismi
 - duyurular
 - cari panel template duzenleme
+
+## Bolum-24
+- Error Sayfalari
+- 404 sayfasi
+- 
