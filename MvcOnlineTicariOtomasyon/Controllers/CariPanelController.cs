@@ -41,20 +41,47 @@ namespace MvcOnlineTicariOtomasyon.Controllers
         public ActionResult GelenMesajlar()
         {
             var mail = (string)Session["CariMail"];
-            var mesajlar = c.Mesajlars.Where(x=>x.Alici==mail).ToList();
+            var mesajlar = c.Mesajlars.Where(x => x.Alici == mail).ToList();
             if (mesajlar != null)
             {
-
-            
-            var gelensayisi = c.Mesajlars.Count(x => x.Alici == mail).ToString();
-            ViewBag.d1 = gelensayisi;
+                var gelensayisi = c.Mesajlars.Count(x => x.Alici == mail).ToString();
+                ViewBag.d1 = gelensayisi;
             }
             else
-            {
                 ViewBag.d1 = 0;
+            if (mesajlar != null)
+            {
+                var gidensayisi = c.Mesajlars.Count(x => x.Gonderici == mail).ToString();
+                ViewBag.d2 = gidensayisi;
             }
+            else
+                ViewBag.d2 = 0;
+
             return View(mesajlar);
         }
+
+        public ActionResult GidenMesajlar()
+        {
+            var mail = (string)Session["CariMail"];
+            var mesajlar = c.Mesajlars.Where(x => x.Gonderici == mail).ToList();
+            if (mesajlar != null)
+            {
+                var gelensayisi = c.Mesajlars.Count(x => x.Alici == mail).ToString();
+                ViewBag.d1 = gelensayisi;
+            }
+            else
+                ViewBag.d1 = 0;
+            if (mesajlar != null)
+            {
+                var gidensayisi = c.Mesajlars.Count(x => x.Gonderici == mail).ToString();
+                ViewBag.d2 = gidensayisi;
+            }
+            else
+                ViewBag.d2 = 0;
+
+            return View(mesajlar);
+        }
+
         [HttpGet]
         public ActionResult YeniMesaj()
         {

@@ -1,6 +1,6 @@
-﻿@model List<MvcOnlineTicariOtomasyon.Models.Siniflar.Mesajlar>
+﻿
 @{
-    ViewBag.Title = "GelenMesajlar";
+    ViewBag.Title = "GidenMesajlar";
     Layout = "~/Views/Shared/_CariLayout.cshtml";
 }
 
@@ -343,11 +343,11 @@
 
                                             <td class="mailbox-star"><a href="#"><i class="fas fa-star text-warning"></i></a></td>
 
-                                            <td class="mailbox-name"><a href="read-mail.html">@item.Gonderici</a></td>
+                                            <td class="mailbox-name"><a href="read-mail.html">@item.Alici</a></td>
 
                                             <td class="mailbox-subject">
 
-                                                <b>@item.Konu</b> - @item.Icerik.Substring(0,40)....
+                                                <b>@item.Konu</b> - @item.Icerik.Substring(0, 40)....
 
                                             </td>
 
@@ -538,7 +538,6 @@
 </body>
 
 </html>
-
 
 
 
