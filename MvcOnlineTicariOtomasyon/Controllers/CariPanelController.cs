@@ -16,8 +16,25 @@ namespace MvcOnlineTicariOtomasyon.Controllers
         public ActionResult Index()
         {
             var mail = (string)Session["CariMail"];
-            var degerler = c.Carilers.FirstOrDefault(x => x.CariMail == mail);
+
+            var degerler = c.Carilers.Where(x => x.CariMail == mail).ToList();
             ViewBag.m = mail;
+
+            var mailid = c.Carilers.Where(x => x.CariMail == mail).Select(y => y.CariID).FirstOrDefault();
+            ViewBag.mid = mailid;
+
+            var toplamsatis = c.SatisHarekets.Where(x => x.CariID == mailid).Count();
+            ViewBag.toplamsatis = toplamsatis;
+
+            var toplamtutar = c.SatisHarekets.Where(x => x.CariID == mailid).Sum(y => (int?)y.ToplamTutar);
+            ViewBag.toplamtutar = toplamtutar;
+
+            var toplamurunsayisi = c.SatisHarekets.Where(x => x.CariID == mailid).Sum(y => (int?)y.Adet);
+            ViewBag.toplamurunsayisi = toplamurunsayisi;
+
+            var adsoyad = c.Carilers.Where(x => x.CariMail == mail).Select(y => y.CariAd + " " + y.CariSoyad).FirstOrDefault();
+            ViewBag.adsoyad = adsoyad;          
+
             return View(degerler);
         }
         public ActionResult Guncelle(Cariler k)

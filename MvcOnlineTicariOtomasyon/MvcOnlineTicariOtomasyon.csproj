@@ -547,6 +547,8 @@
     <Content Include="Template\AdminLTE-3.0.4\dist\css\alt\adminlte.pages.min.css" />
     <Content Include="Template\AdminLTE-3.0.4\dist\css\alt\adminlte.plugins.css" />
     <Content Include="Template\AdminLTE-3.0.4\dist\css\alt\adminlte.plugins.min.css" />
+    <Content Include="Template\AdminLTE-3.0.4\dist\img\1.png" />
+    <Content Include="Template\AdminLTE-3.0.4\dist\img\2.png" />
     <Content Include="Template\AdminLTE-3.0.4\dist\img\AdminLTELogo.png" />
     <Content Include="Template\AdminLTE-3.0.4\dist\img\avatar.png" />
     <Content Include="Template\AdminLTE-3.0.4\dist\img\avatar04.png" />

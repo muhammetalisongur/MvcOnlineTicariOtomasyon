@@ -173,3 +173,8 @@ Code First yaklasimina gore proje hazirlanmistir.
 - Cari kargo detay
 - cari kargo detay sira numarasi
 - Cikis Yap
+
+## Bolum-23
+- Cari panel profil sayfasi ekleme
+- Sayfa Duzenleme
+- cari profilde mesajlar ekleme
