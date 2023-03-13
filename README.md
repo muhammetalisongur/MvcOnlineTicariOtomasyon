@@ -38,6 +38,7 @@ Code First yaklasimina gore proje hazirlanmistir.
 - qr kod kargo takip image olarak ekle
 - cari panelde eksik olan yerleri tamamla
 - Mesaj gonderde substring kisa hatasi cozum
+- cari panelde satin alinan urunlerin resimlerini goster
 
 ## Bolum-1
 - Siniflar Olusturuldu
@@ -178,3 +179,4 @@ Code First yaklasimina gore proje hazirlanmistir.
 - Cari panel profil sayfasi ekleme
 - Sayfa Duzenleme
 - cari profilde mesajlar ekleme
+- 
