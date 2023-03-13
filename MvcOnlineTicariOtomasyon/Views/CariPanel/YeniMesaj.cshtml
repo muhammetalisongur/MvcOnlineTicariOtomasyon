@@ -1,4 +1,4 @@
-﻿
+﻿@model MvcOnlineTicariOtomasyon.Models.Siniflar.Mesajlar
 @{
     ViewBag.Title = "YeniMesaj";
     Layout = "~/Views/Shared/_CariLayout.cshtml";
@@ -247,63 +247,59 @@
                         </div>
 
                         <!-- /.card-header -->
+                        <form class="form-group" method="post">
+                            <div class="card-body">
 
-                        <div class="card-body">
+                                <div class="form-group">
 
-                            <div class="form-group">
-
-                                <input class="form-control" placeholder="Kime:">
-
-                            </div>
-
-                            <div class="form-group">
-
-                                <input class="form-control" placeholder="Konu:">
-
-                            </div>
-
-                            <div class="form-group">
-
-                                <textarea id="compose-textarea" class="form-control" style="height: 300px">
-
-                        Merhaa Denememerfksf
-
-                    </textarea>
-
-                            </div>
-
-                            <div class="form-group">
-
-                                <div class="btn btn-default btn-file">
-
-                                    <i class="fas fa-paperclip"></i> Dosya Sec
-
-                                    <input type="file" name="attachment">
+                                    <input class="form-control" name="Alici" placeholder="Kime:">
 
                                 </div>
 
-                                <p class="help-block">Max. 32MB</p>
+                                <div class="form-group">
+
+                                    <input class="form-control" name="Konu" placeholder="Konu:">
+
+                                </div>
+
+                                <div class="form-group">
+
+                                    <textarea id="compose-textarea" class="form-control" name="Icerik" style="height: 300px"></textarea>
+
+                                </div>
+
+                                <div class="form-group">
+
+                                    <div class="btn btn-default btn-file">
+
+                                        <i class="fas fa-paperclip"></i> Dosya Sec
+
+                                        <input type="file" name="attachment">
+
+                                    </div>
+
+                                    <p class="help-block">Max. 32MB</p>
+
+                                </div>
 
                             </div>
 
-                        </div>
+                            <!-- /.card-body -->
 
-                        <!-- /.card-body -->
+                            <div class="card-footer">
 
-                        <div class="card-footer">
+                                <div class="float-right">
 
-                            <div class="float-right">
+                                    <button type="button" class="btn btn-default"><i class="fas fa-pencil-alt"></i> Taslak</button>
 
-                                <button type="button" class="btn btn-default"><i class="fas fa-pencil-alt"></i> Taslak</button>
+                                    <button type="submit" class="btn btn-primary"><i class="far fa-envelope"></i> Gonder</button>
 
-                                <button type="submit" class="btn btn-primary"><i class="far fa-envelope"></i> Gonder</button>
+                                </div>
+
+                                <button type="reset" class="btn btn-default"><i class="fas fa-times"></i> Vazgec</button>
 
                             </div>
-
-                            <button type="reset" class="btn btn-default"><i class="fas fa-times"></i> Vazgec</button>
-
-                        </div>
-
+                        </form>
                         <!-- /.card-footer -->
 
                     </div>
@@ -347,13 +343,13 @@
     <!-- Page Script -->
 
     <script>
-$(function () {
+        $(function () {
 
-    //Add text editor
+            //Add text editor
 
-    $('#compose-textarea').summernote()
+            $('#compose-textarea').summernote()
 
-  })</script>
+        })</script>
 
 </body>
 

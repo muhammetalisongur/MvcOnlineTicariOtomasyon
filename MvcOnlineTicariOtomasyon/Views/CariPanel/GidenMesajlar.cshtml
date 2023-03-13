@@ -347,7 +347,7 @@
 
                                             <td class="mailbox-subject">
 
-                                                <b>@item.Konu</b> - @item.Icerik.Substring(0, 40)....
+                                                <b>@item.Konu</b> - @item.Icerik.Substring(0, item.Icerik.Length > 30 ? 30 : item.Icerik.Length)....
 
                                             </td>
 

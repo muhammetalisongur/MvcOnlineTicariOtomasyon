@@ -37,6 +37,7 @@ Code First yaklasimina gore proje hazirlanmistir.
 - Urunlerde satis yapilinca stok otomatik dusmesini sagla
 - qr kod kargo takip image olarak ekle
 - cari panelde eksik olan yerleri tamamla
+- Mesaj gonderde substring kisa hatasi cozum
 
 ## Bolum-1
 - Siniflar Olusturuldu
@@ -165,3 +166,4 @@ Code First yaklasimina gore proje hazirlanmistir.
 - Mail ekleme
 - Mail gelen kutusu olusturma
 - Mail giden kutusu olusturma
+- Yeni Mesaj Gonder

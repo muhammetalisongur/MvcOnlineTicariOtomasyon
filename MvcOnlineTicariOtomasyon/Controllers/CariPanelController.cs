@@ -41,7 +41,7 @@ namespace MvcOnlineTicariOtomasyon.Controllers
         public ActionResult GelenMesajlar()
         {
             var mail = (string)Session["CariMail"];
-            var mesajlar = c.Mesajlars.Where(x => x.Alici == mail).ToList();
+            var mesajlar = c.Mesajlars.Where(x => x.Alici == mail).OrderByDescending(x=>x.MesajID).ToList();
             if (mesajlar != null)
             {
                 var gelensayisi = c.Mesajlars.Count(x => x.Alici == mail).ToString();
@@ -63,7 +63,7 @@ namespace MvcOnlineTicariOtomasyon.Controllers
         public ActionResult GidenMesajlar()
         {
             var mail = (string)Session["CariMail"];
-            var mesajlar = c.Mesajlars.Where(x => x.Gonderici == mail).ToList();
+            var mesajlar = c.Mesajlars.Where(x => x.Gonderici == mail).OrderByDescending(x => x.MesajID).ToList();
             if (mesajlar != null)
             {
                 var gelensayisi = c.Mesajlars.Count(x => x.Alici == mail).ToString();
@@ -128,9 +128,12 @@ namespace MvcOnlineTicariOtomasyon.Controllers
         [HttpPost]
         public ActionResult YeniMesaj(Mesajlar m)
         {
+            var mail = (string)Session["CariMail"];
+            m.Tarih = DateTime.Parse(DateTime.Now.ToShortDateString());
+            m.Gonderici = mail;
             c.Mesajlars.Add(m);
             c.SaveChanges();
-            return View();
+            return RedirectToAction("GelenMesajlar","CariPanel");
         }
 
     }
