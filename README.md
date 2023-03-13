@@ -189,4 +189,9 @@ Code First yaklasimina gore proje hazirlanmistir.
 ## Bolum-24
 - Error Sayfalari
 - 404 sayfasi
-- 
+
+## Bolum-24
+- Admin girisi ve admin panelinde authorize islemi
+- admin panelinden logout islemi
+- Global authorize uygulama
+- Cascading İşlemi 2 Dropdownlistte Seçilen Kategoriye Göre Ürünleri Listeleme

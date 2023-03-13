@@ -10,6 +10,7 @@ using Context = MvcOnlineTicariOtomasyon.Models.Siniflar.Context;
 
 namespace MvcOnlineTicariOtomasyon.Controllers
 {
+    [AllowAnonymous]
     public class LoginController : Controller
     {
         // GET: Login
@@ -68,6 +69,12 @@ namespace MvcOnlineTicariOtomasyon.Controllers
 
             }
             return RedirectToAction("Index","Login");
+        }
+        public ActionResult LogOut()
+        {
+            FormsAuthentication.SignOut();
+            Session.Abandon();
+            return RedirectToAction("Index", "Login");
         }
     }
 }

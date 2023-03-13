@@ -12,6 +12,8 @@ using System.Xml.Linq;
 
 namespace MvcOnlineTicariOtomasyon.Controllers
 {
+    [Authorize]
+
     public class SatisController : Controller
     {
         // GET: Satis

@@ -7,6 +7,8 @@ using System.Web.Mvc;
 
 namespace MvcOnlineTicariOtomasyon.Controllers
 {
+    [Authorize]
+
     public class CariController : Controller
     {
         // GET: Cariler

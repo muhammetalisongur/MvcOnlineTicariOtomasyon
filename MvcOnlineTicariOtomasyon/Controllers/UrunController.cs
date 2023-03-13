@@ -8,14 +8,15 @@ using System.Web.Mvc;
 
 namespace MvcOnlineTicariOtomasyon.Controllers
 {
+    [Authorize]
+
     public class UrunController : Controller
     {
         // GET: Urun
         Context c = new Context();
-        int sayfaNo = 1;
+      
         public ActionResult Index(string p)
         {
-
             var UrunListele = from x in c.Uruns select x;
             if (!string.IsNullOrEmpty(p))
             {

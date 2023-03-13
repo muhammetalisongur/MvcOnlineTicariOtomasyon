@@ -6,6 +6,8 @@ using System.Web.Mvc;
 
 namespace MvcOnlineTicariOtomasyon.Controllers
 {
+    [Authorize]
+
     public class AlertController : Controller
     {
         // GET: Alert
