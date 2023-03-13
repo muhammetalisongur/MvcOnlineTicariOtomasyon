@@ -183,3 +183,4 @@ Code First yaklasimina gore proje hazirlanmistir.
 - Duyurular paneli
 - ayarlar kismi
 - duyurular
+- cari panel template duzenleme

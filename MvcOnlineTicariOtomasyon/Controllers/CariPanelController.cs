@@ -195,7 +195,6 @@ namespace MvcOnlineTicariOtomasyon.Controllers
             var cari = c.Carilers.Find(cr.CariID);
             cari.CariAd = cr.CariAd;
             cari.CariSoyad = cr.CariSoyad;
-            cari.CariMail = cr.CariMail;
             cari.CariSehir = cr.CariSehir;
             cari.Sifre = cr.Sifre;
             c.SaveChanges();
