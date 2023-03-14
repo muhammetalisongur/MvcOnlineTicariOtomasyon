@@ -11,9 +11,9 @@
 {
     <div class="form-group">
         @Html.HiddenFor(x => x.KategoriID, new { @class = "form-control" })
-        
-        @Html.Label("Kategori Adı:")
-        @Html.TextBoxFor(x => x.KategoriAd, new { @class = "form-control" })
+
+        @Html.LabelFor(x => x.KategoriAd)
+        @Html.TextBoxFor(x => x.KategoriAd, new { @class = "form-control", @required = "required" })
 
     </div>
     <button class="btn btn-warning">Güncelle</button>

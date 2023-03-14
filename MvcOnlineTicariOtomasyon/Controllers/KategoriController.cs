@@ -8,7 +8,6 @@ using System.Web.Mvc;
 
 namespace MvcOnlineTicariOtomasyon.Controllers
 {
-    [Authorize]
     public class KategoriController : Controller
     {
         // GET: Kategori

@@ -11,17 +11,16 @@
     <form class="form-group" method="post">
 
         @Html.Label("Personel Adı:")
-        @Html.TextBoxFor(x => x.PersonelAd, new { @class = "form-control" })
+        @Html.TextBoxFor(x => x.PersonelAd, new { @class = "form-control", @required = "required" })
         <br />
         @Html.Label("Personel Soyadi:")
-        @Html.TextBoxFor(x => x.PersonelSoyad, new { @class = "form-control" })
+        @Html.TextBoxFor(x => x.PersonelSoyad, new { @class = "form-control", @required = "required" })
         <br />
         @Html.Label("Personel Gorsel:")
         <input type="file" name="PersonelGorsel" />
-        @*@Html.TextBoxFor(x => x.PersonelGorsel, new { @class = "form-control" })*@
         <br />
         @Html.Label("Personel Departmani:")
-        @Html.DropDownListFor(x => x.DepartmanID, (List<SelectListItem>)ViewBag.deger, new { @class = "form-control" })
+        @Html.DropDownListFor(x => x.DepartmanID, (List<SelectListItem>)ViewBag.deger, new { @class = "form-control", @required = "required" })
         <br />
         <button class="btn btn-info">Deparman Ekle</button>
     </form>

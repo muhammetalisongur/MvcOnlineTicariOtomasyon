@@ -8,7 +8,6 @@ using System.Web.Security;
 
 namespace MvcOnlineTicariOtomasyon.Controllers
 {
-    [Authorize]
 
     public class CariPanelController : Controller
     {

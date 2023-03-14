@@ -10,13 +10,9 @@
 <form class="form-group" method="post">
 
     @Html.Label("Kategori Adı:")
-    @Html.TextBoxFor(x => x.KategoriAd, new { @class = "form-control" })
+    @Html.TextBoxFor(x => x.KategoriAd, new { @class = "form-control", @required = "required" })
     <br />
-    <button class="btn btn-info" id="btn1">Kaydet</button>
+    <button class="btn btn-info">Kaydet</button>
 
-    <script>
-        $("#btn1").click(function () {
-            alert("Kategori basarili bir sekilde eklendi")
-        });
-    </script>
+    
 </form>

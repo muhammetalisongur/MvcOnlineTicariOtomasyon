@@ -12,10 +12,10 @@
     <input type="text" name="UrunID" value="@ViewBag.dgr1" class="form-control" readonly />
     <br />
     <b> @Html.LabelFor(x => x.PersonelID)</b>
-    @Html.DropDownListFor(x => x.PersonelID, (List<SelectListItem>)ViewBag.dgr3, new { @class = "form-control" })
+    @Html.DropDownListFor(x => x.PersonelID, (List<SelectListItem>)ViewBag.dgr3, new { @class = "form-control", @required = "required" })
     <br />
     <b> @Html.LabelFor(x => x.CariID)</b>
-    @Html.TextBoxFor(x => x.CariID, new { @class = "form-control" })
+    @Html.TextBoxFor(x => x.CariID, new { @class = "form-control", @required = "required" })
     <br />
     <b> @Html.LabelFor(x => x.Adet)</b>
     <input type="text" min="0" class="form-control" id="text1" onkeyup="sum();" name="Adet" />
