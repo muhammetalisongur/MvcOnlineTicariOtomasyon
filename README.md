@@ -4,11 +4,6 @@
 Code First yaklasimina gore proje hazirlanmistir.
 
 ### Ekstra Eklenecekler:
-- KategoriGetiri html helper ile degil form inputu ile yap
-- Urunlere ve diger tablolara vazgec veya resetle butonu ekle
-- Admin paneli guzellistirme 
-- Urun ekle de durum radiobutton olarak goster
-- validation butun siteye uygula
 - silinmis olan kayitlari gosterme
 - Arama kismini butun tabloya ekle
 - pagedlistelemeyi butun tabloya ekle
