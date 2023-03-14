@@ -18,6 +18,7 @@ namespace MvcOnlineTicariOtomasyon.Controllers
             var listele = c.Departmans.Where(x => x.Durum == true).ToList();
             return View(listele);
         }
+        [Authorize(Roles ="a")]
         [HttpGet]
         public ActionResult YeniDepartman()
         {

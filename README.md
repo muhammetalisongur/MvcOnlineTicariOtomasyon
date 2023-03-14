@@ -195,3 +195,6 @@ Code First yaklasimina gore proje hazirlanmistir.
 - admin panelinden logout islemi
 - Global authorize uygulama
 - Cascading İşlemi 2 Dropdownlistte Seçilen Kategoriye Göre Ürünleri Listeleme
+
+## Bolum-25
+- Yetkilendirme İşlemi

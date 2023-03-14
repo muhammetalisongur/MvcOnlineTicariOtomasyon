@@ -37,7 +37,7 @@
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
                     <a class="dropdown-item" href="#">Ayarlar</a><a class="dropdown-item" href="#">Hesabım</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="login.html">Çıkış Yap</a>
+                    <a class="dropdown-item" href="/Login/LogOut/">Çıkış Yap</a>
                 </div>
             </li>
         </ul>
@@ -161,10 +161,14 @@
                             <div class="sb-nav-link-icon"><i class="fa fa-info-circle"></i></div>
                             Urun Detay
                         </a>
-                        <a class="nav-link" href="/Istatistik/ProgressBar">
-                            <div class="sb-nav-link-icon"><i class="far fa-clock"></i></div>
-                            Hizli Bakis Sayfasi
-                        </a>
+
+                        @if (User.IsInRole("a"))
+                        {
+                            <a class="nav-link" href="/Istatistik/ProgressBar">
+                                <div class="sb-nav-link-icon"><i class="far fa-clock"></i></div>
+                                Hizli Bakis Sayfasi
+                            </a>
+                        }
 
                         <a class="nav-link" href="/Login/LogOut">
                             <div class="sb-nav-link-icon"><i class="fa fa-sign-out-alt"></i></div>
