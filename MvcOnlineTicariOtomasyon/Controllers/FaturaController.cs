@@ -71,10 +71,18 @@ namespace MvcOnlineTicariOtomasyon.Controllers
         [HttpPost]
         public ActionResult YeniKalem(FaturaKalem f)
         {
-           
+
             c.FaturaKalems.Add(f);
             c.SaveChanges();
             return RedirectToAction("Index");
+        }
+
+        public ActionResult Dinamik()
+        {
+            Class3 cs = new Class3();
+            cs.deger1 = c.Faturalars.ToList();
+            cs.deger2 = c.FaturaKalems.ToList();
+            return View(cs);
         }
     }
 }
