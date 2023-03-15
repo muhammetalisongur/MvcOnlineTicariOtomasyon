@@ -5,11 +5,10 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 
 }
-
 @*Adım 1*@
 <br /><br />
-<div class="card card-default">
-    <div class="card-heading">
+<div class="panel panel-default">
+    <div class="panel-heading">
         <div class="row">
             <div class="col-6">
                 <h2 class="panel-title pull-left" style="margin-left:10px;">
@@ -25,7 +24,7 @@
 
     @foreach (var item in Model.deger1)
     {
-        <div class="card-body">
+        <div class="panel-body">
             <table class="table table-striped">
                 <tbody>
                     <tr>
@@ -86,7 +85,7 @@
                     <h5 style="color:#ff6347"> Fatura Detayları</h5>
                     <hr />
                     <div class="form-horizontal">
-                        <input type="hidden" id="Faturaid" />
+                        <input type="hidden" id="FaturaID" />
                         <div class="form-group">
                             <label class="control-label col-md-2">
                                 Seri No
@@ -98,7 +97,7 @@
                                 Sıra No
                             </label>
                             <div class="col-md-4">
-                                <input type="text" id="FaturaSıraNo" name="FaturaSıraNo" placeholder="Sıra Numarası" class="form-control" />
+                                <input type="text" id="FaturaSiraNo" name="FaturaSiraNo" placeholder="Sıra Numarası" class="form-control" />
                             </div>
                         </div>
                         <div class="form-group">
@@ -106,7 +105,7 @@
                                 Tarih
                             </label>
                             <div class="col-md-4">
-                                <input type="text" id="Tarih" name="Tarih" placeholder="Tarihi Giriniz" class="form-control" />
+                                <input type="date" id="Tarih" name="Tarih" placeholder="Tarihi Giriniz" class="form-control" />
                             </div>
                             <label class="control-label col-md-2">
                                 Vergi Dairesi
@@ -120,7 +119,7 @@
                                 Saat
                             </label>
                             <div class="col-md-4">
-                                <input type="text" id="Saat" name="Saat" placeholder="Saati Girin" class="form-control" />
+                                <input type="time" id="Saat" name="Saat" placeholder="Saati Girin" class="form-control" />
                             </div>
                             <label class="control-label col-md-2">
                                 Teslim Eden
@@ -148,7 +147,7 @@
                     <h5 style="margin-top:10px;color:#ff6347"> Fatura Kalemleri</h5>
                     <hr />
                     <div class="form-horizontal">
-                        <input type="hidden" id="id" />
+                        <input type="hidden" id="FaturaKalemID" />
                         <div class="form-group">
                             <label class="control-label col-md-2">
                                 Açıklama
@@ -283,7 +282,7 @@
 
             var data = JSON.stringify({
                 FaturaSeriNo: $("#FaturaSeriNo").val(),
-                FaturaSıraNo: $("#FaturaSıraNo").val(),
+                FaturaSiraNo: $("#FaturaSiraNo").val(),
                 Tarih: $("#Tarih").val(),
                 Saat: $("#Saat").val(),
                 VergiDairesi: $("#VergiDairesi").val(),

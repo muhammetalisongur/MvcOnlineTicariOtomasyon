@@ -4,24 +4,28 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - My ASP.NET Application</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark">
-        <div class="container">
-            @Html.ActionLink("Fatura Islemleri", "Dinamik", "Fatura", new { area = "" }, new { @class = "navbar-brand" })
-            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" title="Toggle navigation" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
-                <ul class="navbar-nav flex-grow-1">
-                    <li>@Html.ActionLink("Faturalar", "Index", "Fatura", new { area = "" }, new { @class = "nav-link" })</li>
-                    <li>@Html.ActionLink("Admin", "Index", "Kategori", new { area = "" }, new { @class = "nav-link" })</li>
-                    <li>@Html.ActionLink("Yardim", "Contact", "Home", new { area = "" }, new { @class = "nav-link" })</li>
-                </ul>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                @Html.ActionLink("Fatura Islemleri", "Dinamik", "Fatura", new { area = "" }, new { @class = "navbar-brand" })
             </div>
+
+            <ul class="nav navbar-nav">
+
+                <li>@Html.ActionLink("Faturalar", "Index", "Fatura", new { area = "" }, new { @class = "nav-link" })</li>
+                <li>@Html.ActionLink("Admin", "Index", "Kategori", new { area = "" }, new { @class = "nav-link" })</li>
+                <li>@Html.ActionLink("Yardim", "Contact", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+
+            </ul>
         </div>
     </nav>
     <div class="container body-content">

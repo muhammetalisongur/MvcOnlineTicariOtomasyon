@@ -58,13 +58,6 @@ namespace MvcOnlineTicariOtomasyon.Controllers
         [HttpGet]
         public ActionResult YeniKalem()
         {
-            //List<SelectListItem> deger1 = (from x in c.Uruns.ToList()
-            //                               select new SelectListItem
-            //                               {
-            //                                   Text = x.UrunAd,
-            //                                   Value = x.UrunID.ToString(),
-            //                               }).ToList();
-            //ViewBag.deger1 = deger1;
             return View();
         }
         [HttpPost]
