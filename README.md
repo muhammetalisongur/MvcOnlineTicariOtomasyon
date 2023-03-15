@@ -1,195 +1,161 @@
-# MvcOnlineTicariOtomasyon
- Mvc Online Ticari Otomasyon
+# Mvc Online Ticari Otomasyon
 
-Code First yaklasimina gore proje hazirlanmistir.
+Proje Code First yaklaşımına göre hazırlanmıştır
+Projeyi adım adım ilerlemisini commit sırasına göre hazırlanmıştır.
 
-### Ekstra Eklenecekler:
-- silinmis olan kayitlari gosterme
-- Arama kismini butun tabloya ekle
-- pagedlistelemeyi butun tabloya ekle
--  Personel Silme islemini yap
-- satis ekrani toplam fiyat gosterme
-- satis ekraninda urun stoku yeterli degilse o urunu eklemeye yonlendirsin alert vererek
-- satis ekraninda toplam urun stok gostersin her urun icin
-- satis icin % indirim olustur
-- fatura detay da fatura seri numarasi tasima
-- yeni kalem girisinde fatura id tasima
-- Adminlayouta personelleri listeleme ekle
-- personel resimleri gosterilecek
-- todo list duzenleme eklenecek
-- todo list sil eklenecek
-- todo list detay sayfasi eklenecek
-- todo list tarih ekleme ileri yonlu
-- todo list popup window seklinde ekleme guncelleem verme
-- login form kayit kontolu yapsin 
-- login sifre hatali ise uyari verdirme
-- cari panel bilgileri listeleme
-- cari panel bilgileri guncelleeme
-- cari resim guncelleme
-- admin giris hatali girise uyari verme
-- fatura popup olarak alinan kalemleri gosterme
-- personel guncelleme isleminde urunm gorselini guncelleme yapmak istemezsek yapmayalim
-- Urunlerde satis yapilinca stok otomatik dusmesini sagla
-- qr kod kargo takip image olarak ekle
-- cari panelde eksik olan yerleri tamamla
-- Mesaj gonderde substring kisa hatasi cozum
-- cari panelde satin alinan urunlerin resimlerini goster
-- duyurular da timeline asagiya kadar listeleme
-- hata sayfasinda bir onceki sayfaya geri donme
+Çözemediğim veya ekleme yapmak istediğiniz yerlere bana bildirirseniz (Issues) hep beraber birşey öğrenmiş oluruz... ♥♥
 
-## Bolum-1
-- Siniflar Olusturuldu
-- Database migration yapildi
-- AdminLayout Olusturuldu
+## Bölüm-1
+- Sınıflar oluşturuldu
+- Database migration yapıldı
+- AdminLayout oluşturuldu
 
-## Bolum-2
+## Bölüm-2
 - AdminLayout düzenleme
 - Kategori listeleme
-- Kategori Ekleme
-- Kategori Silme
-- Kategori Guncelleme
+- Kategori ekleme
+- Kategori silme
+- Kategori güncelleme
 
-## Bolum-3
-- Ürünler Listeleme 
-- Ürün Ekleme DropDownList ile
-- Ürün Sil
-- DropDownList Kategori Ad Gosterme
-- Ürün Güncelleme
+## Bölüm-3
+- Ürünleri listeleme 
+- DropDownList ile ürün ekleme
+- Ürün silme
+- DropDownList ile kategorileri gösterme
+- Ürün güncelleme
 
-## Bolum-4
-- Departman Listeleme
-- Departman Ekleme
-- Departman Durumunu Değiştirme
-- Departman Guncelleme
-- Departman Getir Personel listesi
-- Departman Personel Satislari listeleme
+## Bölüm-4
+- Departman listeleme
+- Departman ekleme
+- Departman durumunu değiştirme ve buna göre listelenmesi
+- Departman güncelleme
+- Departman getir de Personel listesi
+- Departman Personel Satışları listeleme
 
-## Bolum-5
-- Cari Listeleme
-- Cari Ekleme
-- Cari Durum Ekleme
-- Cari Sil
-- Cari Validation Rule
-- Cari Satis Gecmisi
+## Bölüm-5
+- Cari listeleme
+- Cari ekleme
+- Cari durum ekleme ve buna göre listeleme
+- Cari sil
+- Cari Validation Rule uygulama
+- Cari satış geçmişi
 
-## Bolum-6
-- Personel Listeleme
-- Personel ekleme  DropDownList ile
-- Personel Guncelleme
-- Personel Sattigi urun listeleme
+## Bölüm-6
+- Personel listeleme
+- DropDownList  ile Personel ekleme
+- Personel güncelleme
+- Personel satış yaptığı ürünleri listeleme
 
-## Bolum-7
-- Satislar listeleme
-- Satis ekle DropDownList
-- Trigger Kullanimi
-- Satis guncelleme
-- Satis Detay
-- satislar datatable ile tablolama
-- urun listesini pdf excel csv donusturme kodu
+## Bölüm-7
+- Satışlar listeleme
+- DropDownList ile Satış ekle 
+- Satış güncelleme
+- Satış detay
+- Datatable ile satışlar tablolama
+- Ürün listesini pdf, excel ve csv dönüştürme
 
-## Bolum-7
-- Fatura Listeleme
+## Bölüm-8
+- Fatura listeleme
 - Fatura ekleme
-- Fatura guncelleme
-- Yeni Kalem Girisi
+- Fatura güncelleme
+- Yeni kalem girişi
 
-## Bolum-8
-- Istatistik Tablosu Duzenleme
-- Istatistik tablosuna toplam sayilari ekleme
+## Bölüm-9
+- İstatistik tablosu düzenleme
+- İstatistik tablosuna toplam sayıları ekleme
 
-## Bolum-9
-- Galeri temasini ekleme 
-- Temayi duzenleme
-- Galeri resim gosterme
+## Bölüm-10
+- Galeri temasını ekleme 
+- Temayı düzenleme
+- Galeride resim gösterme
 
-## Bolum-10
+## Bölüm-11
 - E-ticaret tema ekleme
-- Detay sinif eklendi
-- IEnumerable ile coklu sinif olusturma
+- Detay sınıf ekleme
+- IEnumerable ile çoklu sınıf oluşturma
 
-## Bolum-11
+## Bölüm-12
 - Progress bar ekleme
-- Sehirler tablosunu olusturma
-- Partial View
-## Bolum-12
-- Personel Listeleme Sayfasi
+- Şehirler tablosunu oluşturma
+- Partial View ile bölümleme
 
-## Bolum-13
-- Todo List Sayfasi
+## Bölüm-13
+- Personel listeleme sayfası
 
-## Bolum-14
-- Login Temasini dahil etme
-- Tema duzenleme
-- Partial View kayit ol ekrani
-- Kayit ol
-- web panel ekleme
+## Bölüm-14
+- Yapılacaklar sayfası
+
+## Bölüm-15
+- Login temasını dahil etme
+- Tema düzenleme
+- Partial View kaydol ekranı
+- Web panel ekleme
 - Authentication 
 - Session
-- Cari Panel giris yapan kisin bilgilerini gosterme
-- Cari siparisleri
+- Cari Panel giriş yapan kişinin bilgilerini gösterme
+- Cari siparişleri
 
-## Bolum-15
-- Admin Giris
-- PagedList kategorilere
-- Arama kutusu urunlere
-- tutar ekle trigger olusturuldu
-- Popup olusturma
-- Bilgisayardan dosya yukleme isleminde
+## Bölüm-16
+- Admin Giriş
+- PagedList ile kategoriler tablolama
+- Arama kutusunu ürünlere ek olarak ekleme
+-  Tutarların otomatik hesaplanması
+- Popup oluşturma
+- Ürünlere ve Personele bilgisayardan resim seç yoluyla resim ekleme
+- Ürünlerde ve Personelde güncelleme de resim seç hatası giderildi
 
-## Bolum-16
-- Alert kullanimi
-- sweet alert 
+## Bölüm-17
+- Alert kullanımı
+- Özelleştirilmiş (Sweet) alert kullanımı
 
-## Bolum-17
-- Urunlerde satis yap sayfasi ekleme
-- iki inputtaki sayiyi 3 inputa otomatik toplamini yada carpini yazdirma
-- Urunlerdeki satis yap fiyat adet ile carpma sonucu toplam tutara yazma 
+## Bölüm-18
+- Ürünlerde satış yap sayfası ekleme
+- iki inputtaki sayıyı 3. inputa otomatik toplamını ya da çarpımını yazdırma
+- Ürünlerdeki satış yap fiyat adet ile çarpma sonucu toplam tutara yazma 
 
-## Bolum-18
-- Kargo Takip ve Kargo Detay sinifi Olusturuldu
-- Kargo takip de random veri olusturma
-- kargo takip arama kutusunu takip numarasi ile yapma
-- kargo takip yonlendirmesinde router config ayari
+## Bölüm-19
+- Kargo Takip ve Kargo Detay sınıfı oluşturuldu
+- Kargo takip de random veri oluşturma
+- Kargo takip arama kutusunu takip numarası ile yapma
+- Kargo takip yönlendirmesinde router config ayarı
 
-## Bolum-19
-- QR kod dll dosyasi eklendi
-- qr kod eklendi
+## Bölüm-20
+- QR kod dll dosyası eklendi
+- QR kod eklendi
 
-## Bolum-20
-- Grafik olusturma
-- Veritabanindaki verile ile grafik olusturma
-- Google Chart View Kodları
+## Bölüm-21
+- Grafik oluşturma
+- Ürünleri grafik ile listeleme
+- Google Chart View kullanımı ve listelenmesi
 
-## Bolum-21
-- Mail ekleme
-- Mail gelen kutusu olusturma
-- Mail giden kutusu olusturma
-- Yeni Mesaj Gonder
+## Bölüm-22
+- Cari Mail ekleme
+- Cari Mail gelen kutusu oluşturma
+- Cari Mail giden kutusu oluşturma
+- Cari Yeni Mesaj gönder
 
-## Bolum-22
-- Cari Urun kargo
+## Bölüm-23
+- Cari ürün kargo
 - Cari kargo detay
-- cari kargo detay sira numarasi
-- Cikis Yap
+- Cari kargo detay sıra numarası
+- Cari Çıkış Yap
 
-## Bolum-23
-- Cari panel profil sayfasi ekleme
-- Sayfa Duzenleme
-- cari profilde mesajlar ekleme
+## Bölüm-24
+- Cari panel profil sayfası ekleme
+- Profil sayfasını düzenleme
+- Cari profilde mesajlar ekleme
 - Duyurular paneli
-- ayarlar kismi
-- duyurular
-- cari panel template duzenleme
+- Ayarlar kısmından cari bilgi güncelleme
 
-## Bolum-24
-- Error Sayfalari
-- 404 sayfasi
+## Bölüm-25
+- Error Sayfaları
+- 404 sayfası
 
-## Bolum-24
-- Admin girisi ve admin panelinde authorize islemi
-- admin panelinden logout islemi
-- Global authorize uygulama
+## Bölüm-26
+- Admin girişi ve admin panelinde authorize işlemi
+- Admin panelinden logout işlemi
+- Global authorize işlemi
 - Cascading İşlemi 2 Dropdownlistte Seçilen Kategoriye Göre Ürünleri Listeleme
 
-## Bolum-25
+## Bölüm-27
 - Yetkilendirme İşlemi
