@@ -1,4 +1,4 @@
-# Online Ticari Otomasyon - .Net FrameWork MVC
+# Stok Takip Otomasyonu - .Net FrameWork MVC
 
 - Proje Code First yaklaşımına göre hazırlanmıştır.
 - Database yedeği proje eklendi
